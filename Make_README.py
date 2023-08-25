@@ -18,5 +18,5 @@ for language in Programing_Languages:
     file_list.sort()
 
     for filenum, title, file in file_list:
-        readme.write(f"- [{filenum}번 : {title}](./{language}/{filename})    \n")
+        readme.write(f"- [{filenum}번 : {title}](./{language}/{filenum})    \n")
 readme.close()
