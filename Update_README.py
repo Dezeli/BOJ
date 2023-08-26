@@ -14,5 +14,5 @@ for language in Programing_Languages:
         file = open(f"./{language}/{filename}", "r", encoding="UTF-8")
         title = file.readline()[2:-1]
         filenum = filename.split(".")[0]
-        readme.write(f"- [{filenum}번 : {title}](./{language}/{filename})    \n")
+        readme.write(f"- [{filenum} : {title}](./{language}/{filename})    \n")
 readme.close()
