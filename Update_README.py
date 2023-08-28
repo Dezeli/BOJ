@@ -1,6 +1,6 @@
 import os
 
-Programing_Languages = ["Python"]
+Programing_Languages = ["Python", "아희"]
 readme = open(f"./README.md", "w", encoding="UTF-8")
 readme.write(
     "## BaekJoon Online Judge Solutions   \nhttps://www.acmicpc.net/   \n"
