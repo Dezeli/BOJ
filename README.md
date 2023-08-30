@@ -17,6 +17,9 @@ https://www.acmicpc.net/
 - [1152 : 단어의 개수](./Python/1152.py)    
 - [1157 : 단어 공부](./Python/1157.py)    
 - [1159 : TRENER](./Python/1159.py)    
+- [1173 : 운동](./Python/1173.py)    
+- [1212 : 8진수 2진수](./Python/1212.py)    
+- [1233 : Bovine Bones](./Python/1233.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
