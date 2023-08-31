@@ -19,7 +19,11 @@ https://www.acmicpc.net/
 - [1159 : TRENER](./Python/1159.py)    
 - [1173 : 운동](./Python/1173.py)    
 - [1212 : 8진수 2진수](./Python/1212.py)    
+- [1225 : Cow Multiplication](./Python/1225.py)    
 - [1233 : Bovine Bones](./Python/1233.py)    
+- [1236 : 성 지키기](./Python/1236.py)    
+- [1247 : 부호](./Python/1247.py)    
+- [1252 : 이진수 덧셈](./Python/1252.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
