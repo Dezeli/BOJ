@@ -24,6 +24,11 @@ https://www.acmicpc.net/
 - [1236 : 성 지키기](./Python/1236.py)    
 - [1247 : 부호](./Python/1247.py)    
 - [1252 : 이진수 덧셈](./Python/1252.py)    
+- [1259 : Palindrome Numbers](./Python/1259.py)    
+- [1264 : Vowels](./Python/1264.py)    
+- [1267 : 핸드폰 요금](./Python/1267.py)    
+- [1268 : 임시 반장 정하기](./Python/1268.py)    
+- [1271 : 엄청난 부자 2](./Python/1271.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
