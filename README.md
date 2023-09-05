@@ -41,6 +41,10 @@ https://www.acmicpc.net/
 - [1362 : Jo’s Pet](./Python/1362.py)    
 - [1371 : 가장 많은 글자](./Python/1371.py)    
 - [1373 : 2진수 8진수](./Python/1373.py)    
+- [1392 : Music Notes](./Python/1392.py)    
+- [1408 : 24](./Python/1408.py)    
+- [1434 : 책 정리](./Python/1434.py)    
+- [1440 : 타임머신](./Python/1440.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
