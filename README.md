@@ -57,6 +57,10 @@ https://www.acmicpc.net/
 - [1598 : 꼬리를 무는 숫자 나열](./Python/1598.py)    
 - [1668 : 트로피 진열](./Python/1668.py)    
 - [1672 : DNA 해독](./Python/1672.py)    
+- [1673 : Peter's smokes](./Python/1673.py)    
+- [1681 : Cow Counting](./Python/1681.py)    
+- [1703 : Growth Tips](./Python/1703.py)    
+- [1712 : 손익 분기점](./Python/1712.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
