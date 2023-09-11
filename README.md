@@ -61,6 +61,9 @@ https://www.acmicpc.net/
 - [1681 : Cow Counting](./Python/1681.py)    
 - [1703 : Growth Tips](./Python/1703.py)    
 - [1712 : 손익 분기점](./Python/1712.py)    
+- [1718 : 암호](./Python/1718.py)    
+- [1731 : 추론](./Python/1731.py)    
+- [1773 : Fireworks Show](./Python/1773.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
