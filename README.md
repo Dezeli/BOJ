@@ -64,6 +64,10 @@ https://www.acmicpc.net/
 - [1718 : 암호](./Python/1718.py)    
 - [1731 : 추론](./Python/1731.py)    
 - [1773 : Fireworks Show](./Python/1773.py)    
+- [1813 : 논리학 교수](./Python/1813.py)    
+- [1816 : 암호키](./Python/1816.py)    
+- [1834 : 나머지와 몫이 같은 수](./Python/1834.py)    
+- [1837 : The Embarrassed Cryptographe](./Python/1837.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
