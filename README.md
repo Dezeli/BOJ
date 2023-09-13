@@ -68,6 +68,10 @@ https://www.acmicpc.net/
 - [1816 : 암호키](./Python/1816.py)    
 - [1834 : 나머지와 몫이 같은 수](./Python/1834.py)    
 - [1837 : The Embarrassed Cryptographe](./Python/1837.py)    
+- [1855 : 암호](./Python/1855.py)    
+- [1864 : Octopus Numbers](./Python/1864.py)    
+- [1924 : 2007년](./Python/1924.py)    
+- [2231 : Digit Generator](./Python/2231.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
