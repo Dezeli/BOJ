@@ -72,6 +72,10 @@ https://www.acmicpc.net/
 - [1864 : Octopus Numbers](./Python/1864.py)    
 - [1924 : 2007년](./Python/1924.py)    
 - [2231 : Digit Generator](./Python/2231.py)    
+- [2338 : 긴자리 계산](./Python/2338.py)    
+- [2420 : Make a Difference](./Python/2420.py)    
+- [2438 : 별 찍기 - 1](./Python/2438.py)    
+- [2439 : 별 찍기 - 2](./Python/2439.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
