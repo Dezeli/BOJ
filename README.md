@@ -76,6 +76,9 @@ https://www.acmicpc.net/
 - [2420 : Make a Difference](./Python/2420.py)    
 - [2438 : 별 찍기 - 1](./Python/2438.py)    
 - [2439 : 별 찍기 - 2](./Python/2439.py)    
+- [2440 : 별 찍기 - 3](./Python/2440.py)    
+- [2441 : 별 찍기 - 4](./Python/2441.py)    
+- [2442 : 별 찍기 - 5](./Python/2442.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
