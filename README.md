@@ -123,6 +123,12 @@ https://www.acmicpc.net/
 - [2557 : Hello World](./Python/2557.py)    
 - [2558 : A+B - 2](./Python/2558.PY)    
 - [2562 : 최댓값](./Python/2562.PY)    
+- [2577 : 숫자의 개수](./Python/2577.py)    
+- [2588 : 곱셈](./Python/2588.py)    
+- [2667 : 단지번호붙이기](./Python/2667.py)    
+- [2675 : Repeating Characters ](./Python/2675.py)    
+- [2739 : 구구단](./Python/2739.py)    
+- [2741 : N 찍기](./Python/2741.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
