@@ -129,6 +129,12 @@ https://www.acmicpc.net/
 - [2675 : Repeating Characters ](./Python/2675.py)    
 - [2739 : 구구단](./Python/2739.py)    
 - [2741 : N 찍기](./Python/2741.py)    
+- [2742 : 기찍 N](./Python/2742.py)    
+- [2750 : 수 정렬하기](./Python/2750.py)    
+- [2751 : 수 정렬하기 2](./Python/2751.py)    
+- [2752 : 세수정렬](./Python/2752.py)    
+- [2753 : 윤년](./Python/2753.py)    
+- [2805 : EKO ](./Python/2805.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
