@@ -135,6 +135,18 @@ https://www.acmicpc.net/
 - [2752 : 세수정렬](./Python/2752.py)    
 - [2753 : 윤년](./Python/2753.py)    
 - [2805 : EKO ](./Python/2805.py)    
+- [2839 : ŠEĆER ](./Python/2839.py)    
+- [2845 : OKUPLJANJE ](./Python/2845.py)    
+- [2869 : PUŽ ](./Python/2869.py)    
+- [2884 : SPAVANAC ](./Python/2884.py)    
+- [2908 : FILIP ](./Python/2908.py)    
+- [2914 : FAKTOR ](./Python/2914.py)    
+- [2920 : NOTE ](./Python/2920.py)    
+- [2941 : LJESNJAK ](./Python/2941.py)    
+- [3003 : BIJELE ](./Python/3003.py)    
+- [3004 : CRNE ](./Python/3004.py)    
+- [3046 : R2](./Python/3046.py)    
+- [3052 : MODULO ](./Python/3052.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
