@@ -147,6 +147,12 @@ https://www.acmicpc.net/
 - [3004 : CRNE ](./Python/3004.py)    
 - [3046 : R2](./Python/3046.py)    
 - [3052 : MODULO ](./Python/3052.py)    
+- [4299 : Beat the Spread!](./Python/4299.py)    
+- [4344 : Above Average](./Python/4344.py)    
+- [4673 : Self Numbers](./Python/4673.py)    
+- [5337 : Welcome ](./Python/5337.py)    
+- [5338 : Microsoft Logo](./Python/5338.py)    
+- [5339 : Call For Help](./Python/5339.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
