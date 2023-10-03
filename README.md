@@ -153,6 +153,12 @@ https://www.acmicpc.net/
 - [5337 : Welcome ](./Python/5337.py)    
 - [5338 : Microsoft Logo](./Python/5338.py)    
 - [5339 : Call For Help](./Python/5339.py)    
+- [5522 : 카드 게임](./Python/5522.py)    
+- [5532 : 방학 숙제](./Python/5532.py)    
+- [5543 : 상근날드](./Python/5543.py)    
+- [5554 : 심부름 가는길](./Python/5554.py)    
+- [5575 : 타임 카드](./Python/5575.py)    
+- [5596 : Score](./Python/5596.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
