@@ -159,6 +159,12 @@ https://www.acmicpc.net/
 - [5554 : 심부름 가는길](./Python/5554.py)    
 - [5575 : 타임 카드](./Python/5575.py)    
 - [5596 : Score](./Python/5596.py)    
+- [5622 : 다이얼](./Python/5622.py)    
+- [5893 : Times17](./Python/5893.py)    
+- [5928 : Contest Timing](./Python/5928.py)    
+- [6749 : Next in line](./Python/6749.py)    
+- [6763 : Speed fines are not fine!](./Python/6763.py)    
+- [6764 : Sounds fishy!](./Python/6764.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
