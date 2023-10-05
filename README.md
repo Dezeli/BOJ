@@ -165,6 +165,14 @@ https://www.acmicpc.net/
 - [6749 : Next in line](./Python/6749.py)    
 - [6763 : Speed fines are not fine!](./Python/6763.py)    
 - [6764 : Sounds fishy!](./Python/6764.py)    
+- [6768 : Don’t pass me the ball!](./Python/6768.py)    
+- [6778 : Which Alien?](./Python/6778.py)    
+- [7287 : 등록](./Python/7287.py)    
+- [8370 : Plane](./Python/8370.py)    
+- [8393 : Sum ](./Python/8393.py)    
+- [8437 : Julka](./Python/8437.py)    
+- [8710 : Koszykarz](./Python/8710.py)    
+- [8718 : Bałwanek](./Python/8718.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
