@@ -6,6 +6,7 @@ https://www.acmicpc.net/
 - [1001 : A-B](./Python/1001.py)    
 - [1002 : 터렛](./Python/1002.py)    
 - [1003 : 피보나치 함수](./Python/1003.py)    
+- [10039 : 평균 점수](./Python/10039.py)    
 - [1004 : 어린 왕자](./Python/1004.py)    
 - [1008 : A/B](./Python/1008.py)    
 - [1009 : 분산처리](./Python/1009.py)    
@@ -173,6 +174,13 @@ https://www.acmicpc.net/
 - [8437 : Julka](./Python/8437.py)    
 - [8710 : Koszykarz](./Python/8710.py)    
 - [8718 : Bałwanek](./Python/8718.py)    
+- [8723 : Patyki](./Python/8723.py)    
+- [8958 : Score ](./Python/8958.py)    
+- [9012 : Parenthesis ](./Python/9012.py)    
+- [9498 : 시험성적](./Python/9498.py)    
+- [9524 : Beautiful Yekaterinburg](./Python/9524.py)    
+- [9653 : Star Wars Logo](./Python/9653.py)    
+- [9654 : Naboo Fleet Data](./Python/9654.py)    
 
 #### 아희
 - [1000 : A+B](./아희/1000)    
