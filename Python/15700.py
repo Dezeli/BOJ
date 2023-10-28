@@ -1,0 +1,5 @@
+# 타일 채우기 4
+import sys
+
+N, M = map(int, sys.stdin.readline().split())
+print(N * M // 2)
