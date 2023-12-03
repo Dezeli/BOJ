@@ -4,21 +4,23 @@ import sys
 N, M = map(int, sys.stdin.readline().split(" "))
 nums = list(map(int, sys.stdin.readline().split(" ")))
 nums.sort()
-li = [0 for _ in range(M)]
+temp = []
 visit = [False for _ in range(N)]
 
-same = []
 
-def DFS(N, M, D):
-    if D==M:
-        print(' '.join(str(nums[i-1]) for i in li))
+def DFS(N, M):
+    if len(temp)==M:
+        print(*temp)
         return
     
+    same = 0
     for i in range(N):
-        if not visit[i]:
+        if not visit[i] and same != nums[i]:
             visit[i] = True
-            li[D] = i+1
-            DFS(N, M, D+1)
+            temp.append(nums[i])
+            same = nums[i]
+            DFS(N, M)
             visit[i] = False
+            temp.pop()
 
-DFS(N, M, 0)
+DFS(N, M)
