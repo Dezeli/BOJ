@@ -5,11 +5,11 @@ import copy
 input = sys.stdin.readline
 
 N = int(input())
-map = []
+pipe_map = []
 
 for _ in range(N):
     line = list(map(int, sys.stdin.readline().split()))
-    map.append(line)
+    pipe_map.append(line)
 
 print(map)
 
