@@ -11,7 +11,7 @@ for _ in range(N):
     paper.append(line)
 
 
-starts = [[0, 0], [0, M-1], [N-1, 0], [N-1, M-1]]
+starts = [[0, 0]]
 check_list = [[0]*M for _ in range(N)]
 zero_check = [[False]*M for _ in range(N)]
 num = 0
@@ -28,10 +28,11 @@ for i in range(N):
 while True:
     if not starts:
         break
-    
     new_start = []
     for start in starts:
-        next = [start]
+        next = []
+        y, x = start
+        next += [[y+1, x], [y-1, x], [y, x+1], [y, x-1]]
         while next:
             y, x = next.pop()
             if y<0 or y>=N:
@@ -46,7 +47,7 @@ while True:
                     new_start.append([y, x])
                 continue
             else:
-                if zero_check[y][x] and [y, x]!=start:
+                if zero_check[y][x]:
                     continue
                 else:
                     zero_check[y][x] = True
