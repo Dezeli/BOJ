@@ -8,13 +8,13 @@ for _ in range(K):
     lines.append(line)
 
 start = 1
-end = max(lines)+1
+end = max(lines) + 1
 
 while start + 1 < end:
-    mid = (start+end)//2
+    mid = (start + end) // 2
     cut = 0
     for line in lines:
-        cut += line//mid
+        cut += line // mid
     if cut >= N:
         start = mid
     else:

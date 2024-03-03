@@ -27,7 +27,7 @@ for case in chicken_com:
     for i1, j1 in houses:
         dis = sys.maxsize
         for i2, j2 in case:
-            dis = min([abs(i1-i2) + abs(j1-j2), dis])
+            dis = min([abs(i1 - i2) + abs(j1 - j2), dis])
         if dis >= min_distances or distances >= min_distances:
             distances += dis
             break

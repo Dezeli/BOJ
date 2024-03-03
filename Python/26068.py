@@ -5,6 +5,6 @@ N = int(input())
 cnt = 0
 for _ in range(N):
     d, num = input().split("-")
-    if int(num)<=90:
+    if int(num) <= 90:
         cnt += 1
 print(cnt)

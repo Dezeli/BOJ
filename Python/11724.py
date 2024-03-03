@@ -9,12 +9,14 @@ for _ in range(M):
     u, v = map(int, sys.stdin.readline().split(" "))
     graph[u].append(v)
     graph[v].append(u)
-    
-dots = [1]+ [0 for _ in range(N)]
+
+dots = [1] + [0 for _ in range(N)]
 
 sys.setrecursionlimit(10**9)
+
+
 def linked(d):
-    if dots[d]==1:
+    if dots[d] == 1:
         return
     else:
         dots[d] = 1
@@ -22,8 +24,9 @@ def linked(d):
             linked(i)
         return
 
-cnt  = 0
-for i in range(1, N+1):
+
+cnt = 0
+for i in range(1, N + 1):
     if dots[i]:
         continue
     else:

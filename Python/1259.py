@@ -13,4 +13,3 @@ while int(num):
     else:
         print("no")
     num = sys.stdin.readline().rstrip()
-    

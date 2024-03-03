@@ -8,19 +8,20 @@ temp = []
 
 
 def DFS(N, M):
-    if len(temp)==M:
+    if len(temp) == M:
         print(*temp)
         return
-    
+
     same = 0
     for i in range(N):
         if same != nums[i]:
             if temp:
-                if temp[-1]>nums[i]:
+                if temp[-1] > nums[i]:
                     continue
             temp.append(nums[i])
             same = nums[i]
             DFS(N, M)
             temp.pop()
+
 
 DFS(N, M)

@@ -1,13 +1,13 @@
-# ICONS 
+# ICONS
 
 N = int(input())
 
 a = 1
 b = 1
 while True:
-    if a*b>=N:
+    if a * b >= N:
         break
-    if a>b:
+    if a > b:
         b += 1
     else:
         a += 1

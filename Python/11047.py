@@ -14,11 +14,11 @@ min_need = sys.maxsize
 
 for i in range(len(coins)):
     need = 0
-    money = K   
+    money = K
     for coin in coins[i:]:
         n, money = divmod(money, coin)
         need += n
-        if money==0 or need > min_need:
+        if money == 0 or need > min_need:
             break
     min_need = min([min_need, need])
 

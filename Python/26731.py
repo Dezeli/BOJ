@@ -1,4 +1,4 @@
-# Zagubiona litera 
+# Zagubiona litera
 import string
 
 S = input()

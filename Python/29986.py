@@ -6,7 +6,7 @@ A = list(map(int, input().split()))
 
 cnt = 0
 for i in A:
-    if i<=H:
+    if i <= H:
         cnt += 1
 
 print(cnt)

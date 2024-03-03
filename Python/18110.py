@@ -9,16 +9,16 @@ for _ in range(n):
     opinions.append(opinion)
 
 opinions.sort()
-minus = n*15/100
-if minus-int(minus)>=0.5:
-    minus = int(minus)+1
+minus = n * 15 / 100
+if minus - int(minus) >= 0.5:
+    minus = int(minus) + 1
 else:
     minus = int(minus)
-julopinions = opinions[minus:n-minus]
+julopinions = opinions[minus : n - minus]
 if julopinions:
-    avgop = sum(julopinions)/len(julopinions)
-    if avgop-int(avgop)>=0.5:
-        avgop = int(avgop)+1
+    avgop = sum(julopinions) / len(julopinions)
+    if avgop - int(avgop) >= 0.5:
+        avgop = int(avgop) + 1
     else:
         avgop = int(avgop)
     print(avgop)

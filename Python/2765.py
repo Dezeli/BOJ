@@ -7,6 +7,6 @@ while True:
     d, r, t = map(float, input().split())
     if r == 0:
         break
-    dis = d/63360 * math.pi * r
+    dis = d / 63360 * math.pi * r
     mph = dis / t * 3600
     print("Trip #%d: %.2f %.2f" % (num, dis, mph))

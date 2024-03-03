@@ -3,6 +3,6 @@
 w = input()
 for i in w:
     if i.isupper():
-        print(i.lower(), end = "")
+        print(i.lower(), end="")
     else:
-        print(i.upper(), end = "")
+        print(i.upper(), end="")

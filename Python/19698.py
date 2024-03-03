@@ -2,9 +2,9 @@
 
 N, W, H, L = map(int, input().split())
 
-can = (W//L)*(H//L)
+can = (W // L) * (H // L)
 
-if N<can:
+if N < can:
     print(N)
 else:
     print(can)

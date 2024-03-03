@@ -1,4 +1,4 @@
-# Sum 
+# Sum
 
 n = int(input())
 sumNums = 0

@@ -1,4 +1,4 @@
-# SPAVANAC 
+# SPAVANAC
 
 H, M = map(int, input().split(" "))
 minute = H * 60 + M

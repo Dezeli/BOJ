@@ -1,6 +1,6 @@
-# 거북이 
+# 거북이
 
 nums = list(map(int, input().split()))
 
 nums.sort()
-print(nums[0]*nums[2])
+print(nums[0] * nums[2])

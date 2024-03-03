@@ -9,8 +9,8 @@ for _ in range(3):
     ynums[y] += 1
 
 for n, i in xnums.items():
-    if i==1:
+    if i == 1:
         print(n, end=" ")
 for n, i in ynums.items():
-    if i==1:
+    if i == 1:
         print(n)

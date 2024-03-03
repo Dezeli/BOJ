@@ -19,17 +19,17 @@ while moves:
         for new_move, new_time in moves:
             if time != new_time:
                 break
-            if new_move==K:
+            if new_move == K:
                 cnt += 1
         break
 
     if short_time[move] >= time:
         short_time[move] = time
         if move >= 1:
-            moves.append([move-1, time+1])
+            moves.append([move - 1, time + 1])
         if move < 100000:
-            moves.append([move+1, time+1])
-            moves.append([move*2, time+1])
-    
+            moves.append([move + 1, time + 1])
+            moves.append([move * 2, time + 1])
+
 print(time)
 print(cnt)

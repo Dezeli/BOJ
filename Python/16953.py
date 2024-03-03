@@ -11,20 +11,20 @@ able = False
 while check:
     cur, time = check.popleft()
     time += 1
-    A1 = cur*2
-    if A1==B:
+    A1 = cur * 2
+    if A1 == B:
         print(time)
         able = True
         break
-    elif A1<B:
+    elif A1 < B:
         check.append((A1, time))
-    
-    A2 = int(str(cur)+'1')
-    if A2==B:
+
+    A2 = int(str(cur) + "1")
+    if A2 == B:
         print(time)
         able = True
         break
-    elif A2<B:
+    elif A2 < B:
         check.append((A2, time))
 
 if not able:

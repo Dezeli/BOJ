@@ -1,4 +1,4 @@
-# Flat 
+# Flat
 
 n, c = map(int, input().split())
 
@@ -8,12 +8,12 @@ total_area = 0
 for _ in range(n):
     a, s = input().split()
     a = int(a)
-    if s=='bedroom':
+    if s == "bedroom":
         bed_area += a
-    if s=='balcony':
+    if s == "balcony":
         bal_area += a
     total_area += a
 
 print(total_area)
 print(bed_area)
-print(total_area*c-bal_area*(c/2))
+print(total_area * c - bal_area * (c / 2))

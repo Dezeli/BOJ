@@ -1,4 +1,4 @@
-# 스티커 
+# 스티커
 import sys
 
 T = int(sys.stdin.readline().rstrip())
@@ -13,6 +13,10 @@ for _ in range(T):
     two = 0
 
     for i in range(n):
-        zero, one, two = max([one, two]), line1[i] + max([zero, two]), line2[i] + max([zero, one])
+        zero, one, two = (
+            max([one, two]),
+            line1[i] + max([zero, two]),
+            line2[i] + max([zero, one]),
+        )
 
     print(max([zero, one, two]))

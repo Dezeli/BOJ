@@ -3,7 +3,7 @@
 while True:
     s = input()
 
-    if s=="END":
+    if s == "END":
         break
 
     else:

@@ -13,6 +13,7 @@ for _ in range(M):
     com_Graph[a].append(b)
     com_Graph[b].append(a)
 
+
 def attack(num):
     if num in virus:
         return
@@ -20,5 +21,7 @@ def attack(num):
         virus.append(num)
         for i in com_Graph[num]:
             attack(i)
+
+
 attack(1)
-print(len(virus)-1)
+print(len(virus) - 1)

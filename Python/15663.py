@@ -9,10 +9,10 @@ visit = [False for _ in range(N)]
 
 
 def DFS(N, M):
-    if len(temp)==M:
+    if len(temp) == M:
         print(*temp)
         return
-    
+
     same = 0
     for i in range(N):
         if not visit[i] and same != nums[i]:
@@ -22,5 +22,6 @@ def DFS(N, M):
             DFS(N, M)
             visit[i] = False
             temp.pop()
+
 
 DFS(N, M)

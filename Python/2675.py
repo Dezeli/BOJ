@@ -1,4 +1,4 @@
-# Repeating Characters 
+# Repeating Characters
 
 T = int(input())
 

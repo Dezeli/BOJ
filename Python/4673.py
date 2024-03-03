@@ -2,6 +2,7 @@
 
 nums = [i for i in range(1, 10001)]
 
+
 def checkSelfNumber(num):
     numStr = str(num)
     strSum = 0
@@ -11,6 +12,7 @@ def checkSelfNumber(num):
         nums.remove(strSum + num)
     except:
         pass
+
 
 for i in range(10000):
     checkSelfNumber(i)

@@ -1,4 +1,4 @@
-# LJESNJAK 
+# LJESNJAK
 
 word = input()
 length = 0

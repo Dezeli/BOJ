@@ -2,7 +2,7 @@
 import sys
 
 input = sys.stdin.readline
-sys.setrecursionlimit(10 ** 9)
+sys.setrecursionlimit(10**9)
 
 nodes = []
 while True:
@@ -10,6 +10,7 @@ while True:
         nodes.append(int(input()))
     except:
         break
+
 
 def post(start, end):
     if start > end:
@@ -23,5 +24,5 @@ def post(start, end):
     post(mid, end)
     print(nodes[start])
 
+
 post(0, len(nodes) - 1)
-            

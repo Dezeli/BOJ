@@ -2,4 +2,4 @@
 
 a, b = map(int, input().split())
 
-print(((a+b)*a+a)*a)
+print(((a + b) * a + a) * a)

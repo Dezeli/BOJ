@@ -7,7 +7,7 @@ heap = []
 
 for _ in range(N):
     order = int(sys.stdin.readline().rstrip())
-    if order==0:
+    if order == 0:
         if heap:
             print(heapq.heappop(heap)[1])
         else:

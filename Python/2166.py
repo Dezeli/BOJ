@@ -15,7 +15,7 @@ for _ in range(N):
 dots.append(dots[0])
 
 for i in range(N):
-    result += dots[i][0]*dots[i+1][1]
-    result -= dots[i][1]*dots[i+1][0]
+    result += dots[i][0] * dots[i + 1][1]
+    result -= dots[i][1] * dots[i + 1][0]
 
-print(abs(result/2))
+print(abs(result / 2))

@@ -7,8 +7,8 @@ input = sys.stdin.readline
 S1 = input().rstrip()
 S2 = input().rstrip()
 
-min_list = [[len(S2)+1, ''] for _ in range(min(len(S1), len(S2))+1)]
-min_list[0] = [-1, '']
+min_list = [[len(S2) + 1, ""] for _ in range(min(len(S1), len(S2)) + 1)]
+min_list[0] = [-1, ""]
 start_search = 0
 
 S2_idx = defaultdict(list)
@@ -25,8 +25,8 @@ for s in S1:
         last_idx, last_string = min_list[i]
         for idx in S2_idx[s]:
             if idx > last_idx:
-                min_list[i+1] = min(min_list[i+1], [idx, last_string+s])
-                if i==start_search:
+                min_list[i + 1] = min(min_list[i + 1], [idx, last_string + s])
+                if i == start_search:
                     start_search += 1
                 break
 

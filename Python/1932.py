@@ -15,6 +15,6 @@ while triangle:
 
     if triangle:
         for i in range(1, len(floor)):
-            triangle[0][i] += max([floor[i-1], floor[i]])
-    
+            triangle[0][i] += max([floor[i - 1], floor[i]])
+
 print(max(floor))

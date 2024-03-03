@@ -5,8 +5,9 @@ import math
 input = sys.stdin.readline
 X = 1000000007
 
+
 def get_val(n, s):
-    return s * square(n, X-2) % X
+    return s * square(n, X - 2) % X
 
 
 def square(num, s):
@@ -14,7 +15,7 @@ def square(num, s):
         return num
 
     if s % 2 == 0:
-        half = square(num, s//2)
+        half = square(num, s // 2)
         return half * half % X
     else:
         return num * square(num, s - 1) % X

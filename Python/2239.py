@@ -1,5 +1,6 @@
 # 스도쿠
 
+
 def row_check(r, num):
     for x in range(9):
         if num == board[r][x]:
@@ -27,7 +28,7 @@ def box_check(r, c, num):
 def dfs(depth):
     if depth >= len(zeros):
         for k in range(9):
-            print(''.join(map(str, board[k])))
+            print("".join(map(str, board[k])))
         exit()
 
     nr, nc = zeros[depth]

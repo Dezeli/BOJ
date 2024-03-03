@@ -40,7 +40,7 @@ for _ in range(N):
             print("-1")
     else:
         pos, num = order.split(" ")
-        if pos[-1]=='t':
+        if pos[-1] == "t":
             deque.insert(0, num)
         else:
             deque.append(num)

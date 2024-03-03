@@ -6,7 +6,7 @@ T = int(stdin.readline().rstrip())
 
 for _ in range(T):
     p = stdin.readline().rstrip()
-    d = p.count('D')
+    d = p.count("D")
     n = int(stdin.readline().rstrip())
 
     if n < d:
@@ -17,14 +17,13 @@ for _ in range(T):
         nums = stdin.readline()
         print("[]")
         continue
-    
-    
+
     queue = deque()
     nums = list(map(int, stdin.readline()[1:-2].split(",")))
     queue += nums
     rev = False
     for ord in p:
-        if ord == 'R':
+        if ord == "R":
             rev = not rev
         else:
             if rev:
@@ -33,4 +32,4 @@ for _ in range(T):
                 queue.popleft()
     if rev:
         queue.reverse()
-    print('[' + ','.join(str(i) for i in queue)+']')
+    print("[" + ",".join(str(i) for i in queue) + "]")

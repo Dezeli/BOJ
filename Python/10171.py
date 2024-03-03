@@ -1,4 +1,4 @@
-# Cats 
+# Cats
 
 print("\\    /\\")
 print(" )  ( ')")

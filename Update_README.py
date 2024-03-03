@@ -1,6 +1,14 @@
 import os
 
-Programing_Languages = ["Python", "아희", "Ada", "FreeBasic", "GolfScript", "Algol68", "Fortran"]
+Programing_Languages = [
+    "Python",
+    "아희",
+    "Ada",
+    "FreeBasic",
+    "GolfScript",
+    "Algol68",
+    "Fortran",
+]
 readme = open(f"./README.md", "w", encoding="UTF-8")
 readme.write(
     "## BaekJoon Online Judge Solutions   \nhttps://www.acmicpc.net/user/dezeli   \n"

@@ -1,6 +1,7 @@
 # 부재중 전화
 import sys
 
+
 def noticeCall():
     N, L, D = map(int, sys.stdin.readline().split(" "))
     breakStart = -5
@@ -16,5 +17,6 @@ def noticeCall():
             print(breakFinish)
             return
         breakFinish += 1
+
 
 noticeCall()

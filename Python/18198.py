@@ -7,17 +7,17 @@ S = input()
 
 score = ""
 for i in S:
-    if i=="A":
+    if i == "A":
         score = "A"
-    elif i=="B":
+    elif i == "B":
         score = "B"
     else:
-        if score=="A":
+        if score == "A":
             A += int(i)
         else:
             B += int(i)
 
-if A>B:
+if A > B:
     print("A")
 else:
     print("B")

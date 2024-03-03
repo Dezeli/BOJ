@@ -2,12 +2,12 @@
 
 g, p, t = map(int, input().split())
 
-indvi = g*p
-group = g + t*p
+indvi = g * p
+group = g + t * p
 
-if indvi<group:
+if indvi < group:
     print(1)
-elif indvi>group:
+elif indvi > group:
     print(2)
 else:
     print(0)

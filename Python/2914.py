@@ -1,4 +1,4 @@
-# FAKTOR 
+# FAKTOR
 import sys
 
 A, I = map(int, sys.stdin.readline().split(" "))

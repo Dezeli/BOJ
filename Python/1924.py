@@ -33,4 +33,3 @@ elif date % 7 == 6:
     print("SAT")
 else:
     print("SUN")
-    

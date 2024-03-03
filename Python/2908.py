@@ -1,4 +1,4 @@
-# FILIP 
+# FILIP
 
 A, B = input().split(" ")
 reverseA = A[::-1]

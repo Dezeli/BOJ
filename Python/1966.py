@@ -13,11 +13,11 @@ for _ in range(T):
 
     cnt = 0
     while True:
-        if sort_files[0]*10 == files[0]:
+        if sort_files[0] * 10 == files[0]:
             cnt += 1
             print(cnt)
             break
-        if sort_files[0]==files[0]:
+        if sort_files[0] == files[0]:
             sort_files.pop(0)
             files.pop(0)
             cnt += 1

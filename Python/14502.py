@@ -13,10 +13,10 @@ first_bomb = []
 for y in range(N):
     line = list(input().split())
     for x in range(M):
-        if line[x]=="0":
+        if line[x] == "0":
             blanks.append([y, x])
-        elif line[x]=="2":
-            first_bomb.append([y, x])    
+        elif line[x] == "2":
+            first_bomb.append([y, x])
     lab_map.append(line)
 
 comb_blank = list(combinations(blanks, 3))
@@ -31,7 +31,7 @@ for change in comb_blank:
     bomb = []
     for bomb_y, bomb_x in first_bomb:
         for i, j in ways:
-            bomb.append([bomb_y+i, bomb_x+j])
+            bomb.append([bomb_y + i, bomb_x + j])
     while bomb:
         bomb_y, bomb_x = bomb.pop()
         if bomb_y >= N or bomb_y < 0:
@@ -44,10 +44,10 @@ for change in comb_blank:
             if max_blank > len_blank:
                 break
             for i, j in ways:
-                bomb.append([bomb_y+i, bomb_x+j])
+                bomb.append([bomb_y + i, bomb_x + j])
 
     max_blank = max([max_blank, len_blank])
     for y, x in blanks:
-        lab_map[y][x]="0"
+        lab_map[y][x] = "0"
 
 print(max_blank)

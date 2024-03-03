@@ -13,4 +13,3 @@ for i in range(51):
     wordList[i].sort()
     for j in wordList[i]:
         print(j)
-        

@@ -18,6 +18,6 @@ for i in range(N):
     while queue:
         n = queue.pop()
         if visit[n] == 0:
-            visit[n]=1
+            visit[n] = 1
             queue += G[n]
-    print(' '.join(str(i) for i in visit))
+    print(" ".join(str(i) for i in visit))

@@ -7,11 +7,11 @@ for _ in range(n):
     print(f"Data set: {a} {b} {f}")
 
     for __ in range(f):
-        if a>b:
-            a = a//2
+        if a > b:
+            a = a // 2
         else:
-            b = b//2
-    if a>b:
+            b = b // 2
+    if a > b:
         print(a, b)
     else:
         print(b, a)

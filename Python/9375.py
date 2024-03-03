@@ -13,5 +13,5 @@ for _ in range(T):
         clothes[type].append(name)
     day = 1
     for val in clothes.values():
-        day *= (len(val)+1)
-    print(day-1)
+        day *= len(val) + 1
+    print(day - 1)

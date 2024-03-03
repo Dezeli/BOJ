@@ -14,4 +14,3 @@ while True:
         else:
             size += 4
     print(size)
-    

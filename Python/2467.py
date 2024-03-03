@@ -20,7 +20,7 @@ while l < r:
         min_sum = abs(case)
         if min_sum == 0:
             break
-    
+
     if case < 0:
         l += 1
     else:

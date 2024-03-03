@@ -12,4 +12,3 @@ while T != "#":
     dictValueSum = [i for i in alpDict.values()]
     print(sum(dictValueSum))
     T = sys.stdin.readline().rstrip()
-    

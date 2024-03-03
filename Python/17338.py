@@ -2,12 +2,12 @@
 
 S, K, H = map(int, input().split())
 
-if sum([S, K, H])>=100:
+if sum([S, K, H]) >= 100:
     print("OK")
 else:
-    if S<K and S<H:
+    if S < K and S < H:
         print("Soongsil")
-    elif K<S and K<H:
+    elif K < S and K < H:
         print("Korea")
     else:
         print("Hanyang")

@@ -17,6 +17,6 @@ for i in range(n):
 cnt = 0
 for i in range(n):
     for j in range(m):
-        if ori[i][j]==rev[i][j]:
-            cnt+=1
+        if ori[i][j] == rev[i][j]:
+            cnt += 1
 print(cnt)

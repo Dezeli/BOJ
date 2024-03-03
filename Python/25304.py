@@ -6,9 +6,9 @@ N = int(input())
 price = 0
 for _ in range(N):
     a, b = map(int, input().split())
-    price += a*b
+    price += a * b
 
-if X==price:
+if X == price:
     print("Yes")
 else:
     print("No")

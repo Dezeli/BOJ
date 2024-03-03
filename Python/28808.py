@@ -6,7 +6,7 @@ cnt = 0
 for _ in range(n):
     s = input()
     for i in s:
-        if i=='+':
+        if i == "+":
             cnt += 1
             break
 print(cnt)

@@ -8,7 +8,7 @@ stack = [0]
 for _ in range(n):
     sn = int(sys.stdin.readline().rstrip())
     while True:
-        if orders[0]=="NO":
+        if orders[0] == "NO":
             break
         if sn == stack[-1]:
             stack.pop()
@@ -23,9 +23,8 @@ for _ in range(n):
                 orders[0] = "NO"
                 break
 
-if orders[0]=="NO":
+if orders[0] == "NO":
     print("NO")
 else:
     for order in orders[1:]:
         print(order)
-        

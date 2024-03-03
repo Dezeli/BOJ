@@ -8,6 +8,6 @@ for _ in range(5):
     socks[sock_num] += 1
 
 for i in range(10):
-    if socks[i]%2==1:
+    if socks[i] % 2 == 1:
         print(i)
         break

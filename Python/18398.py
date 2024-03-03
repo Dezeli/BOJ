@@ -7,4 +7,4 @@ for _ in range(T):
     for __ in range(N):
         A, B = map(int, input().split())
 
-        print(A+B, A*B)
+        print(A + B, A * B)

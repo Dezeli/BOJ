@@ -1,4 +1,4 @@
-# Skarpetki 
+# Skarpetki
 from collections import defaultdict
 
 socks = defaultdict(int)
@@ -10,5 +10,5 @@ for i in S:
 cnt = 0
 
 for val in socks.values():
-    cnt += val//2
+    cnt += val // 2
 print(cnt)

@@ -3,7 +3,7 @@
 N = int(input())
 S = input()
 cnt = 0
-vowels = ['a', 'e', 'i', 'o', 'u']
+vowels = ["a", "e", "i", "o", "u"]
 
 
 for i in S:

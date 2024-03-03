@@ -11,7 +11,7 @@ for _ in range(N):
     paper.append(line)
 
 
-starts = [[0, 0], [0, M-1], [N-1, 0], [N-1, M-1]]
+starts = [[0, 0], [0, M - 1], [N - 1, 0], [N - 1, M - 1]]
 num = 0
 
 cheese = 0
@@ -19,7 +19,7 @@ for line in paper:
     cheese += sum(line)
 melt = 0
 
-check_list = [[False]*M for _ in range(N)]
+check_list = [[False] * M for _ in range(N)]
 while True:
     cheese -= melt
     if not cheese:
@@ -31,9 +31,9 @@ while True:
         next = [start]
         while next:
             y, x = next.pop()
-            if y<0 or y>=N:
+            if y < 0 or y >= N:
                 continue
-            if x<0 or x>=M:
+            if x < 0 or x >= M:
                 continue
             if check_list[y][x] and [y, x] != start:
                 continue
@@ -43,7 +43,7 @@ while True:
                 check_list[y][x] = True
                 melt += 1
                 continue
-            next += [[y+1, x], [y-1, x], [y, x+1], [y, x-1]]
+            next += [[y + 1, x], [y - 1, x], [y, x + 1], [y, x - 1]]
             check_list[y][x] = True
     num += 1
     starts = [] + new_start

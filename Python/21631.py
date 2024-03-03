@@ -2,7 +2,7 @@
 
 a, b = map(int, input().split())
 
-if a>=b:
+if a >= b:
     print(b)
 else:
-    print(a+1)
+    print(a + 1)

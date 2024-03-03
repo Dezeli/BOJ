@@ -9,4 +9,3 @@ for _ in range(N):
     dots.append([y, x])
 
 print(*(min(dots)[::-1]))
-

@@ -3,7 +3,7 @@
 money = 0
 while True:
     lost = int(input())
-    if lost==-1:
+    if lost == -1:
         break
     money += lost
 

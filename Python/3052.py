@@ -1,4 +1,4 @@
-# MODULO 
+# MODULO
 
 nums = []
 restList = []

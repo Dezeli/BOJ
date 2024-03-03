@@ -1,4 +1,4 @@
 # Java Warriors
 
 N = int(input())
-print(N*4000)
+print(N * 4000)

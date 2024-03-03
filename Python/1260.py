@@ -10,6 +10,7 @@ for _ in range(M):
     graph[a].append(b)
     graph[b].append(a)
 
+
 def DFS(graph, root):
     visited = []
     stack = [root]
@@ -24,6 +25,7 @@ def DFS(graph, root):
                 stack += temp
     return " ".join(str(i) for i in visited)
 
+
 def BFS(graph, root):
     visited = []
     queue = deque([root])
@@ -37,7 +39,6 @@ def BFS(graph, root):
                 temp.sort()
                 queue += temp
     return " ".join(str(i) for i in visited)
-
 
 
 print(DFS(graph, V))

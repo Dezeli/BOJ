@@ -7,7 +7,7 @@ cnt = 0
 
 for _ in range(N):
     p = input()
-    if p==jinho:
+    if p == jinho:
         cnt += 1
 
 print(cnt)

@@ -5,7 +5,7 @@ N = int(input())
 dots = []
 
 for _ in range(N):
-    dot= list(map(int, input().split()))
+    dot = list(map(int, input().split()))
     dots.append(dot)
 
 dots.sort()

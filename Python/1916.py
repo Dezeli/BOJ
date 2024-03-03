@@ -15,8 +15,9 @@ for _ in range(M):
 
 start, end = map(int, input().split(" "))
 
+
 def cal_cost(root, end):
-    costs = [sys.maxsize for _ in range(N+1)]
+    costs = [sys.maxsize for _ in range(N + 1)]
     queue = deque([[root, 0]])
 
     while queue:
@@ -28,5 +29,6 @@ def cal_cost(root, end):
                 costs[e] = stack_cost + cost
                 queue.append([e, stack_cost + cost])
     return costs[end]
+
 
 print(cal_cost(start, end))

@@ -4,6 +4,7 @@ scoreList = []
 for i in range(5):
     scoreList.append(int(input()))
 
+
 def avg(scores):
     total = 0
     for singleScore in scores:
@@ -13,5 +14,6 @@ def avg(scores):
             total += singleScore
     average = int(total / 5)
     return average
+
 
 print(avg(scoreList))

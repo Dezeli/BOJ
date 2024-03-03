@@ -1,6 +1,7 @@
 # 수열의 합
 import sys
 
+
 def sum_suyeol(N, L):
     while L < 101:
         first_num = N / L - (L - 1) / 2
@@ -8,6 +9,7 @@ def sum_suyeol(N, L):
             return [int(first_num) + i for i in range(L)]
         L += 1
     return -1
+
 
 N, L = map(int, sys.stdin.readline().split())
 result = sum_suyeol(N, L)

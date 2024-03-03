@@ -7,10 +7,10 @@ for _ in range(N):
     correct = 0
     wrong = 0
     for i in S:
-        if i == 'O':
+        if i == "O":
             correct += 1
         else:
             wrong += 1
-    if correct>wrong:
+    if correct > wrong:
         cnt += 1
 print(cnt)

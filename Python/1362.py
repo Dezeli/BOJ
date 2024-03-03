@@ -1,6 +1,7 @@
 # Jo’s Pet
 import sys
 
+
 def scenario():
     o, w = map(int, sys.stdin.readline().split())
     scenarioNum = 1
@@ -27,4 +28,6 @@ def scenario():
                 o, w = map(int, sys.stdin.readline().split())
                 if o == 0:
                     break
+
+
 scenario()

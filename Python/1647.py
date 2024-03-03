@@ -1,5 +1,6 @@
 # 도시 분할 계획
 import sys
+
 input = sys.stdin.readline
 
 
@@ -8,13 +9,14 @@ def find(n):
         parent[n] = find(parent[n])
     return parent[n]
 
+
 def union(a, b):
     a = find(a)
     b = find(b)
     if a < b:
-        parent[b] = a 
+        parent[b] = a
     else:
-        parent[a] = b 
+        parent[a] = b
 
 
 N, M = map(int, input().split())

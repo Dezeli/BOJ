@@ -1,4 +1,4 @@
-# ACM Hotel 
+# ACM Hotel
 
 T = int(input())
 

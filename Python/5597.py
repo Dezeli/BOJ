@@ -7,5 +7,5 @@ for _ in range(28):
     students[n] = 1
 
 for i in enumerate(students):
-    if i[1]==0:
+    if i[1] == 0:
         print(i[0])

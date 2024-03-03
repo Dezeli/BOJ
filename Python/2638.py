@@ -12,17 +12,17 @@ for _ in range(N):
 
 
 starts = [[0, 0]]
-check_list = [[0]*M for _ in range(N)]
-zero_check = [[False]*M for _ in range(N)]
+check_list = [[0] * M for _ in range(N)]
+zero_check = [[False] * M for _ in range(N)]
 num = 0
 
 for i in range(M):
     check_list[0][i] += 1
-    check_list[N-1][i] += 1
+    check_list[N - 1][i] += 1
 
 for i in range(N):
     check_list[i][0] += 1
-    check_list[i][M-1] += 1
+    check_list[i][M - 1] += 1
 
 
 while True:
@@ -32,12 +32,12 @@ while True:
     for start in starts:
         next = []
         y, x = start
-        next += [[y+1, x], [y-1, x], [y, x+1], [y, x-1]]
+        next += [[y + 1, x], [y - 1, x], [y, x + 1], [y, x - 1]]
         while next:
             y, x = next.pop()
-            if y<0 or y>=N:
+            if y < 0 or y >= N:
                 continue
-            if x<0 or x>=M:
+            if x < 0 or x >= M:
                 continue
             if paper[y][x] == 1:
                 check_list[y][x] += 1
@@ -51,8 +51,8 @@ while True:
                     continue
                 else:
                     zero_check[y][x] = True
-                    next += [[y+1, x], [y-1, x], [y, x+1], [y, x-1]]
+                    next += [[y + 1, x], [y - 1, x], [y, x + 1], [y, x - 1]]
     num += 1
     starts = [] + new_start
 
-print(num-1)
+print(num - 1)

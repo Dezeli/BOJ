@@ -1,4 +1,4 @@
-# PUŽ 
+# PUŽ
 import sys
 
 A, B, V = map(int, (sys.stdin.readline().rstrip()).split(" "))

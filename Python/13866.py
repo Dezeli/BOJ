@@ -1,4 +1,4 @@
-# Assigning Teams 
+# Assigning Teams
 import sys
 
 nums = list(map(int, sys.stdin.readline().split()))

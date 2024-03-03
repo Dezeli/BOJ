@@ -7,6 +7,7 @@ M = sys.stdin.readline().rstrip()
 B = sys.stdin.readline().rstrip().split(" ")
 A.sort()
 
+
 def findNum(num, li):
     last = len(li) - 1
     first = 0
@@ -19,6 +20,7 @@ def findNum(num, li):
         else:
             return True
     return False
+
 
 for i in B:
     if findNum(i, A) == False:

@@ -1,4 +1,4 @@
-# Messages 
+# Messages
 import sys
 
 group_num = 0

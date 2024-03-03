@@ -1,4 +1,4 @@
-# OKUPLJANJE 
+# OKUPLJANJE
 import sys
 
 L, P = map(int, sys.stdin.readline().split(" "))

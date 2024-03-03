@@ -1,4 +1,4 @@
-# ŠEĆER 
+# ŠEĆER
 
 N = int(input())
 

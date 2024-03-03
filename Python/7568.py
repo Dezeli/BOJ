@@ -12,5 +12,4 @@ for a in people:
     for b in people:
         if a[0] < b[0] and a[1] < b[1]:
             bigger += 1
-    print(bigger+1, end=" ")
-
+    print(bigger + 1, end=" ")

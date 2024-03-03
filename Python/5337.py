@@ -1,4 +1,4 @@
-# Welcome 
+# Welcome
 
 print(".  .   .")
 print("|  | _ | _. _ ._ _  _")

@@ -4,4 +4,4 @@ N = int(input())
 
 S = "WelcomeToSMUPC"
 
-print(S[N%14-1])
+print(S[N % 14 - 1])

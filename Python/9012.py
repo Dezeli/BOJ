@@ -1,4 +1,4 @@
-# Parenthesis 
+# Parenthesis
 
 T = int(input())
 

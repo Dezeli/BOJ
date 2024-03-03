@@ -2,4 +2,4 @@
 
 n = int(input())
 
-print(n*24)
+print(n * 24)

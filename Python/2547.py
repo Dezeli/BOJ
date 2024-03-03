@@ -8,8 +8,8 @@ for _ in range(T):
     candy = 0
     for __ in range(N):
         candy += int(input())
-    
-    if candy%N==0:
+
+    if candy % N == 0:
         print("YES")
     else:
         print("NO")

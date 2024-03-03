@@ -5,9 +5,9 @@ N = int(sys.stdin.readline().rstrip())
 
 title = 665
 num = 0
-while num!=N:
+while num != N:
     title += 1
-    if str(title).count('666')>=1:
+    if str(title).count("666") >= 1:
         num += 1
-    
+
 print(title)

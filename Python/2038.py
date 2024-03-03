@@ -3,6 +3,7 @@ import sys
 
 n = int(sys.stdin.readline().rstrip())
 
+
 def golomb():
     suyeol = [(0, 0), (1, 1), (2, 3), (4, 5)]
     idx = 3
@@ -15,6 +16,7 @@ def golomb():
             suyeol.append((last + 1, last + idx))
             last += idx
         idx += 1
+
 
 if n == 1:
     result = 1

@@ -4,7 +4,7 @@ n = int(input())
 
 num, alp = divmod(n, 8)
 
-if alp==0:
+if alp == 0:
     alp = 8
     num -= 1
 

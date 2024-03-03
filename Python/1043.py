@@ -8,7 +8,7 @@ N, M = map(int, input().split(" "))
 Truth = list(map(int, input().split(" ")))
 people = defaultdict(set)
 parties = []
-Truth_check = [0 for _ in range(N+1)]
+Truth_check = [0 for _ in range(N + 1)]
 
 for _ in range(M):
     party = list(map(int, input().split(" ")))[1:]

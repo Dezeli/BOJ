@@ -2,13 +2,13 @@
 
 s = input()
 
-if s=="M":
+if s == "M":
     print("MatKor")
-elif s=="W":
+elif s == "W":
     print("WiCys")
-elif s=="C":
+elif s == "C":
     print("CyKor")
-elif s=="A":
+elif s == "A":
     print("AlKor")
-elif s=="$":
+elif s == "$":
     print("$clear")

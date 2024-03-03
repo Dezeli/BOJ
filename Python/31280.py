@@ -3,4 +3,4 @@
 rats = list(map(int, input().split()))
 
 
-print(sum(rats)-min(rats)+1)
+print(sum(rats) - min(rats) + 1)

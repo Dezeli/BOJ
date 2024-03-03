@@ -1,5 +1,6 @@
 # 단지번호붙이기
 
+
 def numberHomes(home):
     def checkUpDownLeftRight(x, y, num):
         if x <= -1 or x >= len(home[0]) or y <= -1 or y >= len(home):
@@ -30,6 +31,7 @@ def numberHomes(home):
     count.sort()
     for i in count:
         print(i)
+
 
 N = int(input())
 homes = []

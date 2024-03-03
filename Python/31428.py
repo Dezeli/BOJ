@@ -6,7 +6,7 @@ fTrack = list(input().split())
 myTrack = input()
 cnt = 0
 for i in fTrack:
-    if i==myTrack:
+    if i == myTrack:
         cnt += 1
 
 print(cnt)

@@ -1,4 +1,4 @@
-# BIJELE 
+# BIJELE
 import sys
 
 K, Q, L, B, N, P = map(int, sys.stdin.readline().split(" "))

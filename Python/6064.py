@@ -3,6 +3,7 @@ from sys import stdin
 
 T = int(stdin.readline().rstrip())
 
+
 def find(M, N, x, y):
     k = x
     while k <= M * N:

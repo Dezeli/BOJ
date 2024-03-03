@@ -2,6 +2,7 @@
 
 M, N = map(int, input().split())
 
+
 def isPrime(m, n):
     n += 1
     prime = [0] * n
@@ -13,5 +14,6 @@ def isPrime(m, n):
     for i in range(m, n):
         if i > 1 and prime[i] == 0:
             print(i)
+
 
 isPrime(M, N)

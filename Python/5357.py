@@ -3,9 +3,9 @@
 T = int(input())
 for _ in range(T):
     s = input()
-    last = ''
+    last = ""
     for i in s:
-        if i==last:
+        if i == last:
             continue
         else:
             print(i, end="")

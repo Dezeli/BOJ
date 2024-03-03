@@ -1,4 +1,4 @@
-# Counting Antibodies 
+# Counting Antibodies
 
 V1, J1 = map(int, input().split())
 V2, J2 = map(int, input().split())

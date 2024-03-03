@@ -1,4 +1,4 @@
 # DKSH 찾기
 
 S = input()
-print(S.count('DKSH'))
+print(S.count("DKSH"))

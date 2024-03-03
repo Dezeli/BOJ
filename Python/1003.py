@@ -3,6 +3,7 @@ import sys
 
 T = int(sys.stdin.readline())
 
+
 def fibonacci(num):
     if num == 0 or num == 1:
         return num
@@ -21,6 +22,7 @@ def fibonacci(num):
     elif num == 31:
         return 1346269
     return fibonacci(num - 1) + fibonacci(num - 2)
+
 
 for i in range(T):
     num = int(sys.stdin.readline())

@@ -2,7 +2,7 @@
 
 N, M = map(int, input().split())
 
-if N==M:
+if N == M:
     print(1)
 else:
     print(0)

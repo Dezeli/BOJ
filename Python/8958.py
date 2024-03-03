@@ -1,4 +1,4 @@
-# Score 
+# Score
 
 T = int(input())
 

@@ -4,7 +4,7 @@ min_num = 101
 sum_num = 0
 for _ in range(7):
     n = int(input())
-    if n%2==1:
+    if n % 2 == 1:
         sum_num += n
         min_num = min(min_num, n)
 

@@ -11,16 +11,16 @@ M = scores[1]
 S = scores[3]
 F = scores[4]
 
-if K>E:
-    num += (K-E)*508
+if K > E:
+    num += (K - E) * 508
 else:
-    num += (E-K)*108
+    num += (E - K) * 108
 
-if M>S:
-    num += (M-S)*212
+if M > S:
+    num += (M - S) * 212
 else:
-    num += (S-M)*305
+    num += (S - M) * 305
 
-num += F*707
+num += F * 707
 
-print(num*4763)
+print(num * 4763)

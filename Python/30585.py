@@ -8,7 +8,7 @@ b = 0
 for _ in range(h):
     line = input()
     for i in line:
-        if i=='0':
+        if i == "0":
             r += 1
         else:
             b += 1

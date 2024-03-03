@@ -1,4 +1,4 @@
-# Dogs 
+# Dogs
 
 print("|\_/|")
 print("|q p|   /}")

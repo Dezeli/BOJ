@@ -12,19 +12,20 @@ def get_max_inc(nums):
     max_inc = [0 for _ in range(N)]
     for num_idx in range(len(nums)):
         num = nums[num_idx]
-        for i in range(N-1, -1, -1):
-            if up_list[i]!=0 and up_list[i] < num:
-                if up_list[i+1]==0:
-                    up_list[i+1]=num
+        for i in range(N - 1, -1, -1):
+            if up_list[i] != 0 and up_list[i] < num:
+                if up_list[i + 1] == 0:
+                    up_list[i + 1] = num
                 else:
-                    up_list[i+1] = min([num, up_list[i+1]])
-                if max_inc[num_idx]==0:
-                    max_inc[num_idx] = i+2
-        if up_list[0] > num or up_list[0]==0:
+                    up_list[i + 1] = min([num, up_list[i + 1]])
+                if max_inc[num_idx] == 0:
+                    max_inc[num_idx] = i + 2
+        if up_list[0] > num or up_list[0] == 0:
             up_list[0] = num
-        if max_inc[num_idx]==0:
+        if max_inc[num_idx] == 0:
             max_inc[num_idx] = 1
     return max_inc
+
 
 ori = get_max_inc(A)
 A.reverse()
@@ -33,6 +34,4 @@ rev.reverse()
 max_len = 0
 for i in range(N):
     max_len = max([max_len, ori[i] + rev[i]])
-print(max_len-1)
-
-
+print(max_len - 1)

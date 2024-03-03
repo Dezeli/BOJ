@@ -14,8 +14,9 @@ for _ in range(E):
     u, v, w = map(int, input().split(" "))
     Graph[u].append([w, v])
 
+
 def short_distance(start):
-    dis = [sys.maxsize for _ in range(V+1)]
+    dis = [sys.maxsize for _ in range(V + 1)]
     dis[start] = 0
     moves = [[0, start]]
     while moves:

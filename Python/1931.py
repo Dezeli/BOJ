@@ -9,7 +9,7 @@ for _ in range(N):
     start, end = map(int, sys.stdin.readline().split(" "))
     meetings.append((start, end))
 
-meetings.sort(key=lambda x:(x[1], x[0]))
+meetings.sort(key=lambda x: (x[1], x[0]))
 
 meet_cnt = 0
 meet_end = 0

@@ -7,11 +7,11 @@ n, m, r = map(int, input().split())
 items = [0] + list(map(int, input().split()))
 
 INF = int(1e9)
-game_map = [[INF]*(n+1) for _ in range(n+1)]
+game_map = [[INF] * (n + 1) for _ in range(n + 1)]
 
 for _ in range(r):
     a, b, l = map(int, input().split())
-    game_map[a][b] =  l
+    game_map[a][b] = l
     game_map[b][a] = l
 
 for i in range(1, n + 1):

@@ -7,6 +7,6 @@ word = ""
 
 while idx < len(S):
     word += S[idx]
-    idx += ord(S[idx])-64
+    idx += ord(S[idx]) - 64
 
 print(word)

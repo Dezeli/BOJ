@@ -13,4 +13,3 @@ for _ in range(3):
         print(0)
     else:
         print("-")
-        

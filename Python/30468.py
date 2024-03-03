@@ -2,7 +2,7 @@
 
 STR, DEX, INT, LUK, N = map(int, input().split())
 
-if sum([STR, DEX, INT, LUK])>=N*4:
+if sum([STR, DEX, INT, LUK]) >= N * 4:
     print(0)
 else:
-    print(N*4-sum([STR, DEX, INT, LUK]))
+    print(N * 4 - sum([STR, DEX, INT, LUK]))

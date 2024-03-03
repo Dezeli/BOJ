@@ -6,5 +6,5 @@ if sentence != "":
     word_List = sentence.split(" ")
 else:
     word_List = []
-    
+
 print(len(word_List))

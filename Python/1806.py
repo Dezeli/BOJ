@@ -1,4 +1,4 @@
-# 부분합 
+# 부분합
 import sys
 
 input = sys.stdin.readline

@@ -5,9 +5,9 @@ from collections import defaultdict, deque
 N = int(sys.stdin.readline().rstrip())
 
 G = defaultdict(list)
-P_Node = [0 for _ in range(N+1)]
+P_Node = [0 for _ in range(N + 1)]
 
-for _ in range(N-1):
+for _ in range(N - 1):
     N1, N2 = map(int, sys.stdin.readline().split(" "))
     G[N1].append(N2)
     G[N2].append(N1)
@@ -25,4 +25,3 @@ while check:
 
 for i in P_Node[2:]:
     print(i)
-

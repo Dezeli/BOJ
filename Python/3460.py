@@ -7,9 +7,9 @@ for _ in range(T):
     num = int(input())
     i = 0
     while True:
-        if num==0:
+        if num == 0:
             break
-        if num%2==1:
+        if num % 2 == 1:
             pos.append(i)
         num //= 2
         i += 1
