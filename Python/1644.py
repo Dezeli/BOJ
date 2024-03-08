@@ -25,7 +25,7 @@ else:
     l = 0
     r = 0
     sum_prime = prime_list[0]
-    count = 0
+    cnt = 0
 
     while l <= r:
 
@@ -34,10 +34,10 @@ else:
             l += 1
         else:
             if sum_prime == N:
-                count += 1
+                cnt += 1
             r += 1
             if r == len(prime_list):
                 break
             sum_prime += prime_list[r]
 
-    print(count)
+    print(cnt)
