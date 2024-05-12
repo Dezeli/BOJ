@@ -16,4 +16,4 @@ for n in books:
         i = bisect_left(ans, n)
         ans[i] = n
 
-print(N-len(ans))
+print(N - len(ans))

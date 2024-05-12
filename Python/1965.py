@@ -15,5 +15,5 @@ for b in box:
     else:
         i = bisect_left(ans, b)
         ans[i] = b
-        
+
 print(len(ans))

@@ -12,16 +12,16 @@ M = int(input())
 
 for _ in range(M):
     ins = input().rstrip()
-    if ins=='L':
-        if idx!=0:
+    if ins == "L":
+        if idx != 0:
             idx -= 1
             queue.appendleft(queue.pop())
-    elif ins=='D':
-        if idx!=len(queue):
+    elif ins == "D":
+        if idx != len(queue):
             idx += 1
             queue.append(queue.popleft())
-    elif ins=='B':
-        if idx!=0:
+    elif ins == "B":
+        if idx != 0:
             queue.pop()
             idx -= 1
     else:
@@ -32,4 +32,4 @@ for _ in range(M):
 while idx < len(queue):
     queue.append(queue.popleft())
     idx += 1
-print(''.join(queue))
+print("".join(queue))

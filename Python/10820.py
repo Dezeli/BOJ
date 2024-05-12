@@ -8,7 +8,7 @@ while True:
         blank = 0
         S = input()
         for i in S:
-            if i==' ':
+            if i == " ":
                 blank += 1
             elif i.isupper():
                 upper += 1

@@ -23,4 +23,4 @@ for i, n in A:
         cnt[search] = n
         idx[search].append(i)
 
-print(N-len(cnt))
+print(N - len(cnt))

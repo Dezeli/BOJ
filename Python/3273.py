@@ -7,7 +7,7 @@ a = sorted(list(map(int, input().split())))
 x = int(input())
 
 l = 0
-r = n-1
+r = n - 1
 cnt = 0
 while l < r:
     if a[l] + a[r] == x:

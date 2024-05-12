@@ -8,12 +8,12 @@ pay = list(map(int, input().split()))
 
 cur_sum = 0
 l = 0
-r = m-1
-for i in range(r+1):
+r = m - 1
+for i in range(r + 1):
     cur_sum += pay[i]
 max_sum = cur_sum
 
-while r < n-1:
+while r < n - 1:
     cur_sum -= pay[l]
     l += 1
     r += 1

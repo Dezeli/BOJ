@@ -22,12 +22,12 @@ while queue:
         if i == 0:
             newC, newS = s, s
         elif i == 1:
-            newS, newC= s + c, c
+            newS, newC = s + c, c
         else:
             newS, newC = s - 1, c
 
-        if newS>=1001 or newS<0 or newC>=1001 or newC<0 or visited[newS][newC]:
+        if newS >= 1001 or newS < 0 or newC >= 1001 or newC < 0 or visited[newS][newC]:
             continue
 
         visited[newS][newC] = True
-        queue.append([newS, newC, cnt+1])
+        queue.append([newS, newC, cnt + 1])

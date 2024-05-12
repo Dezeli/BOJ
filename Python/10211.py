@@ -14,7 +14,7 @@ for _ in range(T):
         sum_X.append(sum_X[-1] + i)
 
     max_sum = -3000
-    for i in range(N+1):
-        for j in range(i+1, N+1):
-            max_sum = max(sum_X[j]-sum_X[i], max_sum)
+    for i in range(N + 1):
+        for j in range(i + 1, N + 1):
+            max_sum = max(sum_X[j] - sum_X[i], max_sum)
     print(max_sum)

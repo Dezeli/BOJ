@@ -14,9 +14,9 @@ for _ in range(N):
 max_cnt = 0
 max_num = []
 for key, val in nums.items():
-    if val==max_cnt:
+    if val == max_cnt:
         max_num.append(key)
-    elif val>max_cnt:
+    elif val > max_cnt:
         max_num = [key]
         max_cnt = val
 max_num.sort()

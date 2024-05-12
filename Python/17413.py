@@ -9,15 +9,15 @@ while True:
     if i >= len(S):
         break
 
-    if S[i]=='<':
+    if S[i] == "<":
         while stack:
             print(stack.pop(), end="")
 
-        while S[i]!='>':
+        while S[i] != ">":
             print(S[i], end="")
             i += 1
         print(S[i], end="")
-    elif S[i]==' ':
+    elif S[i] == " ":
         while stack:
             print(stack.pop(), end="")
         print(S[i], end="")

@@ -11,7 +11,7 @@ for i in range(K):
     N -= 1
 
 div = 1
-for i in range(2, K+1):
+for i in range(2, K + 1):
     div *= i
 
-print((ans//div)%10007)
+print((ans // div) % 10007)

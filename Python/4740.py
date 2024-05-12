@@ -2,7 +2,7 @@
 
 while True:
     s = input()
-    if s=='***':
+    if s == "***":
         break
-    
+
     print(s[::-1])

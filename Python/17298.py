@@ -6,7 +6,7 @@ input = sys.stdin.readline
 N = int(input())
 A = list(map(int, input().split()))
 
-NGE = [-1]*N
+NGE = [-1] * N
 
 stack = [0]
 

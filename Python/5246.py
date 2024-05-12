@@ -7,7 +7,7 @@ for _ in range(T):
 
     cnt = [0 for _ in range(9)]
     for i in range(len(checker)):
-        if i%2==0:
+        if i % 2 == 0:
             continue
         else:
             cnt[checker[i]] += 1

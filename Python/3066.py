@@ -6,7 +6,7 @@ input = sys.stdin.readline
 
 T = int(input())
 
-for case in range(1, T+1):
+for case in range(1, T + 1):
     N = int(input())
     chips = [int(input()) for _ in range(N)]
 
@@ -19,4 +19,3 @@ for case in range(1, T+1):
             i = bisect_left(ans, n)
             ans[i] = n
     print(len(ans))
-

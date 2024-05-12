@@ -12,10 +12,10 @@ for i in input():
 
 cnt = 0
 for key, val in w1.items():
-    cnt += abs(val-w2[key])
+    cnt += abs(val - w2[key])
 
 for key, val in w2.items():
-    if w1[key]==0:
+    if w1[key] == 0:
         cnt += val
 
 print(cnt)

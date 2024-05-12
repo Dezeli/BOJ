@@ -10,7 +10,7 @@ ropes.sort()
 max_bear = 0
 cnt = N
 for i in ropes:
-    max_bear = max(max_bear, i*cnt)
+    max_bear = max(max_bear, i * cnt)
     cnt -= 1
 
 print(max_bear)

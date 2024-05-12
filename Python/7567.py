@@ -5,7 +5,7 @@ h = 10
 last = S[0]
 
 for i in S[1:]:
-    if last==i:
+    if last == i:
         h += 5
     else:
         h += 10

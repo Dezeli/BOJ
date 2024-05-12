@@ -15,11 +15,10 @@ for _ in range(N):
 max_cnt = 0
 max_book = []
 for key, val in best.items():
-    if val==max_cnt:
+    if val == max_cnt:
         max_book.append(key)
-    elif val>max_cnt:
+    elif val > max_cnt:
         max_book = [key]
         max_cnt = val
 max_book.sort()
 print(max_book[0])
-    

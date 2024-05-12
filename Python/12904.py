@@ -12,12 +12,12 @@ for i in T:
 
 pos = False
 while remove_list:
-    if ''.join(remove_list)==S:
+    if "".join(remove_list) == S:
         print(1)
         pos = True
         break
     l = remove_list.pop()
-    if l=='B':
+    if l == "B":
         remove_list.reverse()
 if not pos:
     print(0)

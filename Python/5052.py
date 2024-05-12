@@ -13,11 +13,11 @@ for _ in range(T):
         phone_nums.append(num)
     phone_nums.sort()
     ans = True
-    for i in range(n-1):
-        if phone_nums[i] == phone_nums[i+1][:len(phone_nums[i])]:
+    for i in range(n - 1):
+        if phone_nums[i] == phone_nums[i + 1][: len(phone_nums[i])]:
             ans = False
             break
-    
+
     if ans:
         print("YES")
     else:

@@ -18,4 +18,3 @@ student.sort()
 
 for i in student:
     print(i[3])
-

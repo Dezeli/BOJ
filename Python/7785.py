@@ -10,14 +10,14 @@ n = int(input())
 
 for _ in range(n):
     name, status = input().rstrip().split()
-    if status=="enter":
+    if status == "enter":
         company[name] = 1
     else:
         company[name] = 0
 
 names = []
 for key, val in company.items():
-    if val==1:
+    if val == 1:
         names.append(key)
 names.sort(reverse=True)
 

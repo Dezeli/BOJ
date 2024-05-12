@@ -2,9 +2,9 @@
 
 s = input()
 
-last = ''
+last = ""
 for i in s:
-    if last==i:
+    if last == i:
         continue
     print(i, end="")
     last = i

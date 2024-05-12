@@ -8,6 +8,6 @@ for _ in range(T):
 
     parts = list(map(int, input().split()))
     for i in range(5):
-        sum_price += price[i]*parts[i]
-    
+        sum_price += price[i] * parts[i]
+
     print("${:.2f}".format(sum_price))

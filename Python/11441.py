@@ -13,4 +13,4 @@ for i in A:
 M = int(input())
 for _ in range(M):
     l, r = map(int, input().split())
-    print(sum_A[r]-sum_A[l-1])
+    print(sum_A[r] - sum_A[l - 1])

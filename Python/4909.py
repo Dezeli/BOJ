@@ -5,5 +5,5 @@ while True:
     if sum(scores) == 0:
         break
     scores = scores[1:-1]
-    avg = sum(scores)/4
-    print(avg if sum(scores)%4 else int(avg))
+    avg = sum(scores) / 4
+    print(avg if sum(scores) % 4 else int(avg))

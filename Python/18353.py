@@ -15,4 +15,4 @@ for i, p in enumerate(soldiers):
         search = bisect_left(cnt, -p)
         cnt[search] = -p
 
-print(N-len(cnt))
+print(N - len(cnt))

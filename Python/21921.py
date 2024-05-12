@@ -14,12 +14,12 @@ for i in blog:
 max_vistor = 0
 cnt = 1
 
-for i in range(N-X+1):
-    cur = sum_blog[i+X]-sum_blog[i]
+for i in range(N - X + 1):
+    cur = sum_blog[i + X] - sum_blog[i]
     if max_vistor < cur:
         cnt = 1
         max_vistor = cur
-    elif max_vistor==cur:
+    elif max_vistor == cur:
         cnt += 1
 
 if max_vistor:

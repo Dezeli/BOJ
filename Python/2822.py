@@ -16,6 +16,6 @@ print(sum(big_scores[:5]))
 
 idx = []
 for i in big_scores[:5]:
-    idx.append(scores.index(i)+1)
+    idx.append(scores.index(i) + 1)
 idx.sort()
 print(*idx)

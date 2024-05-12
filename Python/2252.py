@@ -8,12 +8,13 @@ sys.setrecursionlimit(10**6)
 N, M = map(int, input().split())
 
 order = defaultdict(list)
-check = [False for _ in range(N+1)]
+check = [False for _ in range(N + 1)]
 right_order = []
 
 for _ in range(M):
     A, B = map(int, input().split())
     order[B].append(A)
+
 
 def make_line(n):
     for i in order[n]:
@@ -24,7 +25,8 @@ def make_line(n):
     right_order.append(n)
     check[n] = True
 
-for i in range(1, N+1):
+
+for i in range(1, N + 1):
     if check[i]:
         continue
     make_line(i)

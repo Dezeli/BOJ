@@ -8,14 +8,14 @@ liq = sorted(list(map(int, input().split())))
 
 
 l = 0
-r = N-1
+r = N - 1
 ansl = l
 ansr = r
-min_comb = 2000000000 
+min_comb = 2000000000
 
 while l < r:
     comb = liq[l] + liq[r]
-    if comb==0:
+    if comb == 0:
         ansl = l
         ansr = r
         break

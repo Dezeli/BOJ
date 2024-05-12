@@ -10,7 +10,7 @@ nums.sort()
 min_Sum = sys.maxsize
 
 
-for i in range(N-2):
+for i in range(N - 2):
     start = i + 1
     end = N - 1
     while start < end:
@@ -24,5 +24,5 @@ for i in range(N-2):
             end -= 1
         else:
             break
-            
+
 print(*result)

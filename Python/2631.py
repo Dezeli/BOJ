@@ -16,4 +16,4 @@ for c in children:
         s = bisect_left(dp, c)
         dp[s] = c
 
-print(N-len(dp))
+print(N - len(dp))

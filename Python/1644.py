@@ -1,6 +1,7 @@
 # 소수의 연속합
 
 import math
+
 N = int(input())
 
 if N == 1:
@@ -10,11 +11,11 @@ else:
     aristo[0] = False
     aristo[1] = False
 
-    for i in range(2, int(math.sqrt(N)+1)):
+    for i in range(2, int(math.sqrt(N) + 1)):
         if aristo[i] == True:
             j = 2
             while (i * j) <= N:
-                aristo[i*j] = False
+                aristo[i * j] = False
                 j += 1
 
     prime_list = []

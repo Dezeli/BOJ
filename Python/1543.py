@@ -3,4 +3,4 @@
 S = input()
 word = input()
 
-print(len(S.split(word))-1)
+print(len(S.split(word)) - 1)

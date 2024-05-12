@@ -15,4 +15,4 @@ for i, line in enumerate(pole):
         search = bisect_left(cnt, line)
         cnt[search] = line
 
-print(n-len(cnt))
+print(n - len(cnt))

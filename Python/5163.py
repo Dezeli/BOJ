@@ -2,7 +2,7 @@
 import math
 
 K = int(input())
-for i in range(1, K+1):
+for i in range(1, K + 1):
     b, w = map(float, input().split())
     helium = 0
     for __ in range(int(b)):
@@ -10,9 +10,9 @@ for i in range(1, K+1):
         helium += (4 * math.pi * (r**3)) / 3000
 
     print(f"Data Set {i}:")
-    if helium>=w and b!=0:
+    if helium >= w and b != 0:
         print("Yes")
     else:
         print("No")
-    if i!=K:
+    if i != K:
         print()

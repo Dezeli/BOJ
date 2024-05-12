@@ -10,8 +10,8 @@ sum_temp = [0]
 for i in temps:
     sum_temp.append(sum_temp[-1] + i)
 
-max_temp = -100*K
+max_temp = -100 * K
 
-for i in range(N-K+1):
-    max_temp = max(max_temp, sum_temp[i+K]-sum_temp[i])
+for i in range(N - K + 1):
+    max_temp = max(max_temp, sum_temp[i + K] - sum_temp[i])
 print(max_temp)

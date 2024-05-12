@@ -9,7 +9,7 @@ lesson = list(map(int, input().split()))
 ans = 0
 l, r = max(lesson), sum(lesson)
 while l <= r:
-    mid = (l+r)//2
+    mid = (l + r) // 2
     cnt, sum_t = 0, 0
     for i in range(N):
         if sum_t + lesson[i] > mid:

@@ -1,4 +1,4 @@
-# 영수증 
+# 영수증
 
 sum_book = int(input())
 

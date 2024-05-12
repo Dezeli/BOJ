@@ -10,7 +10,7 @@ l = 0
 r = max(requests)
 
 while l <= r:
-    mid = (l+r) // 2
+    mid = (l + r) // 2
     total = 0
     for i in requests:
         if i > mid:

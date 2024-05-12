@@ -16,6 +16,6 @@ heap = [times[0][1]]
 for i in range(1, N):
     if heap[0] <= times[i][0]:
         heapq.heappop(heap)
-    heapq.heappush(heap,times[i][1])
+    heapq.heappush(heap, times[i][1])
 
 print(len(heap))

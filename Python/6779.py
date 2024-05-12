@@ -4,8 +4,8 @@ h = int(input())
 M = int(input())
 
 g = False
-for t in range(1, M+1):
-    A = -6*(t**4) + h*(t**3) + 2*(t**2) + t
+for t in range(1, M + 1):
+    A = -6 * (t**4) + h * (t**3) + 2 * (t**2) + t
     if A <= 0:
         g = True
         break

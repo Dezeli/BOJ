@@ -23,7 +23,7 @@ for i, n in A:
         cnt[search] = n
         idx[search].append(i)
 
-print(N-len(cnt))
+print(N - len(cnt))
 
 suyeol = deque([])
 suyeol.appendleft(idx.pop().pop())
@@ -37,7 +37,7 @@ while idx:
 s = 0
 suyeol.append(0)
 for i, n in A:
-    if i==suyeol[s]:
+    if i == suyeol[s]:
         s += 1
     else:
         print(i)

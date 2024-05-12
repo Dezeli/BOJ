@@ -10,5 +10,5 @@ mul_nums = sum(nums)
 ans = 0
 for i in nums:
     mul_nums -= i
-    ans += i*mul_nums
+    ans += i * mul_nums
 print(ans)

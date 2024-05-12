@@ -5,12 +5,14 @@ sys.setrecursionlimit(10**8)
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
-nums = [i for i in range(n+1)]
+nums = [i for i in range(n + 1)]
+
 
 def find_parent(x):
     if nums[x] != x:
         nums[x] = find_parent(nums[x])
     return nums[x]
+
 
 def union_parent(a, b):
     a = find_parent(a)
@@ -19,7 +21,8 @@ def union_parent(a, b):
         nums[b] = a
     else:
         nums[a] = b
-        
+
+
 for _ in range(m):
     s, a, b = map(int, input().split())
     if s == 0:

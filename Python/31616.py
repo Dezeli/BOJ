@@ -6,7 +6,7 @@ S = input()
 c = S[0]
 same = True
 for i in S:
-    if i!= c:
+    if i != c:
         same = False
         break
 if same:

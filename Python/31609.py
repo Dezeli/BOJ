@@ -6,4 +6,3 @@ A.sort()
 
 for i in A:
     print(i)
-

@@ -5,13 +5,13 @@ S = input()
 stack = []
 
 cnt = 0
-bef = ')'
+bef = ")"
 for i in S:
-    if i=='(':
+    if i == "(":
         stack.append(i)
     else:
         stack.pop()
-        if bef=='(':
+        if bef == "(":
             cnt += len(stack)
         else:
             cnt += 1

@@ -1,5 +1,6 @@
 # 좋다
 import sys
+
 input = sys.stdin.readline
 
 N = int(input())
@@ -10,7 +11,7 @@ cnt = 0
 for i in range(N):
     find = nums[i]
     l = 0
-    r = len(nums)-1
+    r = len(nums) - 1
     while l < r:
         if nums[l] + nums[r] == find:
             if l == i:

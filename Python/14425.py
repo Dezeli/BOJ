@@ -12,5 +12,5 @@ cnt = 0
 for _ in range(M):
     t = input()
     if t in S:
-        cnt+=1
+        cnt += 1
 print(cnt)

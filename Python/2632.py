@@ -21,8 +21,8 @@ for _ in range(n):
 for i in range(m):
     sum_slice = A_slice[i]
     A_pizza[sum_slice] += 1
-    for j in range(1, m-1):
-        sum_slice += A_slice[(i+j)%m]
+    for j in range(1, m - 1):
+        sum_slice += A_slice[(i + j) % m]
         A_pizza[sum_slice] += 1
 A_pizza[sum(A_slice)] += 1
 A_pizza[0] += 1
@@ -30,8 +30,8 @@ A_pizza[0] += 1
 for i in range(n):
     sum_slice = B_slice[i]
     B_pizza[sum_slice] += 1
-    for j in range(1, n-1):
-        sum_slice += B_slice[(i+j)%n]
+    for j in range(1, n - 1):
+        sum_slice += B_slice[(i + j) % n]
         B_pizza[sum_slice] += 1
 B_pizza[sum(B_slice)] += 1
 B_pizza[0] += 1
@@ -40,5 +40,5 @@ cnt = 0
 for s, c in A_pizza.items():
     if s > P:
         continue
-    cnt += c*B_pizza[P-s]
+    cnt += c * B_pizza[P - s]
 print(cnt)

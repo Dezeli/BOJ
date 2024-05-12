@@ -17,19 +17,19 @@ B_dict = defaultdict(int)
 for i in range(n):
     sum_li = A[i]
     A_dict[sum_li] += 1
-    for j in range(i+1, n):
+    for j in range(i + 1, n):
         sum_li += A[j]
         A_dict[sum_li] += 1
 
 for i in range(m):
     sum_li = B[i]
     B_dict[sum_li] += 1
-    for j in range(i+1, m):
+    for j in range(i + 1, m):
         sum_li += B[j]
         B_dict[sum_li] += 1
 
 cnt = 0
 for key, val in A_dict.items():
-    cnt += B_dict[T-key]*val
+    cnt += B_dict[T - key] * val
 
 print(cnt)

@@ -7,14 +7,14 @@ for _ in range(T):
     odd = 0
     even = 0
     for i in nums:
-        if i%2==0:
+        if i % 2 == 0:
             even += i
         else:
             odd += i
 
-    if odd<even:
+    if odd < even:
         print("EVEN")
-    elif odd==even:
+    elif odd == even:
         print("TIE")
     else:
         print("ODD")
