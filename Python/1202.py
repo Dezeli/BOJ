@@ -16,7 +16,7 @@ bags.sort()
 sum_val = 0
 fit = []
 for C in bags:
-    while jewerly and C>=jewerly[0][0]:
+    while jewerly and C >= jewerly[0][0]:
         heapq.heappush(fit, -heapq.heappop(jewerly)[1])
     if fit:
         sum_val -= heapq.heappop(fit)

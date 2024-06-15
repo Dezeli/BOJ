@@ -8,7 +8,7 @@ T = int(input())
 for _ in range(T):
     N = int(input())
     fac = 1
-    for i in range(2, N+1):
+    for i in range(2, N + 1):
         fac *= i
-    
-    print(fac%10)
+
+    print(fac % 10)

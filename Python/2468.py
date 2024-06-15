@@ -22,7 +22,7 @@ H = [list(map(int, input().split())) for _ in range(N)]
 
 ans = 1
 for k in range(max(map(max, H))):
-    sink = [[False]*N for _ in range(N)]
+    sink = [[False] * N for _ in range(N)]
     cnt = 0
     for i in range(N):
         for j in range(N):

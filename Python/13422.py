@@ -17,11 +17,10 @@ for _ in range(T):
             sum_m += i
             p_money.append(sum_m)
 
-
     steal = 0
-    for i in range(M, M+N):
-        if p_money[i]-p_money[i-M]<K:
+    for i in range(M, M + N):
+        if p_money[i] - p_money[i - M] < K:
             steal += 1
-    if M==N and steal>0:
+    if M == N and steal > 0:
         steal = 1
     print(steal)
