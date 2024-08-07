@@ -6,7 +6,7 @@ input = sys.stdin.readline
 R, C = map(int, input().split())
 
 lines = [input().rstrip() for _ in range(R)]
-zip_lines = [''.join(i) for i in zip(*lines)]
+zip_lines = ["".join(i) for i in zip(*lines)]
 
 words = []
 for l in lines:
@@ -16,7 +16,7 @@ for l in zip_lines:
 
 words.sort()
 for i in words:
-    if len(i)<2:
+    if len(i) < 2:
         continue
     print(i)
     break

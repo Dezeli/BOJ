@@ -7,4 +7,4 @@ N = int(input())
 A = list(map(int, input().split()))
 i = A.index(-1)
 
-print(min(A[:i])+min(A[i+1:]))
+print(min(A[:i]) + min(A[i + 1 :]))

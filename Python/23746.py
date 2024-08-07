@@ -12,10 +12,10 @@ for _ in range(N):
     pattern[U] = L
 
 Ustr = input().rstrip()
-Lstr = ''
+Lstr = ""
 for s in Ustr:
     Lstr += pattern[s]
 
 
 S, E = map(int, input().split())
-print(Lstr[S-1:E])
+print(Lstr[S - 1 : E])

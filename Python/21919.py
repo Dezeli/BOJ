@@ -20,7 +20,7 @@ for i in nums:
     if is_prime(i):
         ans *= i
 
-if ans!=1:
+if ans != 1:
     print(ans)
 else:
     print(-1)

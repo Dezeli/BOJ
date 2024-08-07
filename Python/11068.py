@@ -11,13 +11,13 @@ for _ in range(T):
         li = []
         temp = n
         while temp != 0:
-            li.append(temp%i)
-            temp = temp//i
-        for k in range(len(li)//2):
-            if li[k] != li[-1-k]:
-                ans.append('X')
+            li.append(temp % i)
+            temp = temp // i
+        for k in range(len(li) // 2):
+            if li[k] != li[-1 - k]:
+                ans.append("X")
                 break
-    if len(ans)==63:
+    if len(ans) == 63:
         print(0)
     else:
         print(1)

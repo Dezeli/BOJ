@@ -1,4 +1,4 @@
 # 달팽이2
 
 m, n = map(int, input().split())
-print(2*min(m, n)-1-(m<=n))
+print(2 * min(m, n) - 1 - (m <= n))

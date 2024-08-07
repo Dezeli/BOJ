@@ -13,9 +13,9 @@ lasti = nums[0]
 
 for i in nums:
     if i <= lasti:
-        max_up = max(max_up, lasti-start)
+        max_up = max(max_up, lasti - start)
         start = i
     lasti = i
-max_up = max(max_up, lasti-start)
+max_up = max(max_up, lasti - start)
 
 print(max_up)

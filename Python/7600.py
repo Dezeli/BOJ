@@ -6,7 +6,7 @@ input = sys.stdin.readline
 while True:
     cnt = [0 for _ in range(100)]
     line = input().rstrip()
-    if line=="#":
+    if line == "#":
         break
     for i in line:
         cnt[ord(i.upper())] = 1

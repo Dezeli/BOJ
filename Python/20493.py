@@ -13,33 +13,33 @@ for _ in range(N):
     T, S = input().rstrip().split()
     T = int(T)
 
-    x += lastS[0]*(T-lastT)
-    y += lastS[1]*(T-lastT)
+    x += lastS[0] * (T - lastT)
+    y += lastS[1] * (T - lastT)
 
     lastT = T
-    if lastS[0]==1:
-        if S=="left":
+    if lastS[0] == 1:
+        if S == "left":
             lastS = [0, 1]
         else:
             lastS = [0, -1]
-    elif lastS[0]==-1:
-        if S=="left":
+    elif lastS[0] == -1:
+        if S == "left":
             lastS = [0, -1]
         else:
             lastS = [0, 1]
     else:
-        if lastS[1]==1:
-            if S=="left":
+        if lastS[1] == 1:
+            if S == "left":
                 lastS = [-1, 0]
             else:
                 lastS = [1, 0]
         else:
-            if S=="left":
+            if S == "left":
                 lastS = [1, 0]
             else:
                 lastS = [-1, 0]
 
-x += lastS[0]*(finT-lastT)
-y += lastS[1]*(finT-lastT)
+x += lastS[0] * (finT - lastT)
+y += lastS[1] * (finT - lastT)
 
 print(x, y)

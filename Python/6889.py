@@ -1,4 +1,4 @@
-# Smile with Similes 
+# Smile with Similes
 
 n = int(input())
 m = int(input())

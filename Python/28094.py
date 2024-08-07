@@ -3,6 +3,7 @@ import sys
 
 input = sys.stdin.readline
 
+
 def DFS(d, N, visited, cost):
     global ans, cnt
     if d == N:
@@ -30,16 +31,16 @@ T = int(input())
 for _ in range(T):
     ans = 0
     cnt = 0
-    
+
     N, M = map(int, input().split())
-    
-    cost = [[0]*(N+1) for _ in range(N+1)]
-    
+
+    cost = [[0] * (N + 1) for _ in range(N + 1)]
+
     for _ in range(M):
         V, A, B = map(int, input().split())
         cost[A][B] += V
-    
+
     visited = [-1] * (N + 1)
     DFS(0, N, visited, cost)
-    
+
     print(ans, cnt)
