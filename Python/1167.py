@@ -3,6 +3,7 @@ import sys
 from collections import defaultdict, deque
 
 input = sys.stdin.readline
+sys.setrecursionlimit(10**8)
 
 V = int(input())
 Tree = defaultdict(list)
