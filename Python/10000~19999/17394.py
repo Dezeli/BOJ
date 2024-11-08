@@ -13,9 +13,10 @@ for i in range(2, int(limit ** (1 / 2)) + 1):
         for j in range(2 * i, limit, i):
             isPrime[j] = 1
 
+
 def prime(m, n):
     p = []
-    for i in range(m, n+1):
+    for i in range(m, n + 1):
         if i > 1 and isPrime[i] == 0:
             p.append(i)
     return p
@@ -47,15 +48,8 @@ for _ in range(T):
             break
         if num > 1000000 or num < 0:
             continue
-        if visit[num]==1:
+        if visit[num] == 1:
             continue
-        
+
         visit[num] = 1
-        nQueue += [num//2, num//3, num+1, num-1]
-
-
-
-
-
-
-
+        nQueue += [num // 2, num // 3, num + 1, num - 1]

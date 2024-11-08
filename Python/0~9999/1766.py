@@ -8,7 +8,7 @@ input = sys.stdin.readline
 N, M = map(int, input().split())
 
 
-can_solve = [0 for _ in range(N+1)]
+can_solve = [0 for _ in range(N + 1)]
 hint_dict = defaultdict(list)
 
 for _ in range(M):
@@ -17,8 +17,8 @@ for _ in range(M):
     hint_dict[A].append(B)
 
 heap = []
-for i in range(1, N+1):
-    if can_solve[i]==0:
+for i in range(1, N + 1):
+    if can_solve[i] == 0:
         heapq.heappush(heap, i)
 
 order = []
@@ -27,7 +27,7 @@ while heap:
     order.append(i)
     for j in hint_dict[i]:
         can_solve[j] -= 1
-        if can_solve[j]==0:
+        if can_solve[j] == 0:
             heapq.heappush(heap, j)
 
 print(*order)

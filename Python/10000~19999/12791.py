@@ -33,7 +33,7 @@ Q = int(input())
 for _ in range(Q):
     S, E = map(int, input().split())
     total = []
-    for y in range(S, E+1):
+    for y in range(S, E + 1):
         if y in bowie:
             for n in bowie[y]:
                 total.append(f"{y} {n}")

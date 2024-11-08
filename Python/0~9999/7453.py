@@ -13,18 +13,20 @@ for _ in range(n):
     C.append(n3)
     D.append(n4)
 
+
 def solution(A, B, C, D):
     nums = dict()
-    
+
     for i in A:
         for j in B:
-            ij = i+j
+            ij = i + j
             nums[ij] = nums.get(ij, 0) + 1
     result = 0
     for i in C:
         for j in D:
-            ij = -i-j
+            ij = -i - j
             result += nums.get(ij, 0)
     return result
+
 
 print(solution(A, B, C, D))

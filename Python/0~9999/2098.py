@@ -9,6 +9,7 @@ move = [list(map(int, input().split())) for _ in range(N)]
 
 data = {}
 
+
 def DFS(cur, visited):
     if visited == (1 << N) - 1:
         if move[cur][0]:

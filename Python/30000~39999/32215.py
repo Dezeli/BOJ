@@ -2,6 +2,6 @@
 
 n, m, k = map(int, input().split())
 
-dohun = k*m
+dohun = k * m
 cha = m
-print(dohun+cha)
+print(dohun + cha)

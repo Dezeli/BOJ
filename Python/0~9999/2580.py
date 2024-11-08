@@ -18,18 +18,20 @@ def checkRow(x, a):
             return False
     return True
 
+
 def checkCol(y, a):
     for i in range(9):
         if a == sdoku[i][y]:
             return False
     return True
 
+
 def checkRect(x, y, a):
     nx = x // 3 * 3
     ny = y // 3 * 3
     for i in range(3):
         for j in range(3):
-            if a == sdoku[nx+i][ny+j]:
+            if a == sdoku[nx + i][ny + j]:
                 return False
     return True
 
@@ -46,7 +48,8 @@ def dfs(idx):
 
         if checkRow(x, i) and checkCol(y, i) and checkRect(x, y, i):
             sdoku[x][y] = i
-            dfs(idx+1)
+            dfs(idx + 1)
             sdoku[x][y] = 0
+
 
 dfs(0)

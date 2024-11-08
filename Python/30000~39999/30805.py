@@ -8,18 +8,18 @@ A = list(map(int, input().split()))
 M = int(input())
 B = list(map(int, input().split()))
 
+
 def sol(A, B, res):
 
     if (not A) or (not B):
         return res
-    
 
     tmpA, tmpB = max(A), max(B)
     idxA, idxB = A.index(tmpA), B.index(tmpB)
 
     if tmpA == tmpB:
         res.append(tmpA)
-        return sol(A[idxA + 1:], B[idxB + 1:], res)
+        return sol(A[idxA + 1 :], B[idxB + 1 :], res)
     elif tmpA > tmpB:
         A.pop(idxA)
         return sol(A, B, res)

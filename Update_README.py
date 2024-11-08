@@ -34,7 +34,7 @@ Programing_Languages = [
     "GolfScript",
     "Algol68",
     "Fortran",
-    "C++17"
+    "C++17",
 ]
 
 for language in Programing_Languages:

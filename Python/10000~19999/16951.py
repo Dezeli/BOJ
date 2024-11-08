@@ -12,18 +12,18 @@ for i in range(N):
     num = A[i]
     minus = False
     for j in range(i):
-        if num - (K*(i-j)) < 1:
+        if num - (K * (i - j)) < 1:
             minus = True
             break
-        if A[j] == num - (K*(i-j)):
+        if A[j] == num - (K * (i - j)):
             cnt += 1
-    for j in range(i+1, N):
-        if num + (K*(j-i)) < 1:
+    for j in range(i + 1, N):
+        if num + (K * (j - i)) < 1:
             minus = True
             break
-        if A[j] == num + (K*(j-i)):
+        if A[j] == num + (K * (j - i)):
             cnt += 1
     if not minus:
-        minimum = min(N-cnt, minimum)
+        minimum = min(N - cnt, minimum)
 
 print(minimum)

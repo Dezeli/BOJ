@@ -1,4 +1,4 @@
-# FizzBuzz 
+# FizzBuzz
 import sys
 
 input = sys.stdin.readline
@@ -19,12 +19,11 @@ except:
         c = int(c)
         num = c + 1
 
-if num%3==0 and num%5==0:
+if num % 3 == 0 and num % 5 == 0:
     print("FizzBuzz")
-elif num%3==0:
+elif num % 3 == 0:
     print("Fizz")
-elif num%5==0:
+elif num % 5 == 0:
     print("Buzz")
 else:
     print(num)
-

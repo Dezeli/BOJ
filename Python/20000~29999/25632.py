@@ -3,6 +3,7 @@ import sys
 
 input = sys.stdin.readline
 
+
 def isPrime(m, n):
     result = set()
     n += 1
@@ -16,6 +17,7 @@ def isPrime(m, n):
             result.add(i)
     return result
 
+
 A, B = map(int, input().split())
 C, D = map(int, input().split())
 
@@ -27,10 +29,10 @@ both = len(yt) + len(yj) - len(total)
 
 len_yt = len(yt)
 len_yj = len(yj)
-if both%2==1:
+if both % 2 == 1:
     len_yt += 1
 
-if len_yt>len_yj:
+if len_yt > len_yj:
     print("yt")
 else:
-    print("yj")    
+    print("yj")

@@ -12,9 +12,9 @@ sum_plus = 0
 for num in A:
     mul = 0
     while num:
-        if num%2==0:
-            num = num//2
-            mul += 1 
+        if num % 2 == 0:
+            num = num // 2
+            mul += 1
         else:
             num -= 1
             sum_plus += 1

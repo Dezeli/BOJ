@@ -1,5 +1,6 @@
 # 외판원 순회 3
 import sys
+
 input = sys.stdin.readline
 
 N = int(input())
@@ -9,10 +10,11 @@ move = []
 for x1, y1 in location:
     city = []
     for x2, y2 in location:
-        city.append(((x2-x1)**2+(y2-y1)**2)**(1/2))
+        city.append(((x2 - x1) ** 2 + (y2 - y1) ** 2) ** (1 / 2))
     move.append(city)
-    
+
 data = {}
+
 
 def DFS(cur, visited):
     if visited == (1 << N) - 1:

@@ -13,32 +13,32 @@ for _ in range(N):
     max_bomb = max(max_bomb, b)
 
 idxs = []
-while sum(bombs)>0:
+while sum(bombs) > 0:
     try:
         i = bombs.index(max_bomb)
     except:
         max_bomb -= 1
         continue
-    
+
     idxs.append(i)
     lefti = i
     righti = i
     while True:
         if lefti < 1:
             break
-        if bombs[lefti-1] < bombs[lefti]:
+        if bombs[lefti - 1] < bombs[lefti]:
             lefti -= 1
         else:
             break
     while True:
-        if righti > N-1:
+        if righti > N - 1:
             break
-        if bombs[righti] > bombs[righti+1]:
+        if bombs[righti] > bombs[righti + 1]:
             righti += 1
         else:
             break
-    
-    for i in range(lefti, righti+1):
+
+    for i in range(lefti, righti + 1):
         bombs[i] = 0
 
 idxs.sort()

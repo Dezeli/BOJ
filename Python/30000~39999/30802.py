@@ -1,4 +1,4 @@
-# 웰컴 키트 
+# 웰컴 키트
 import sys
 
 input = sys.stdin.readline
@@ -11,8 +11,8 @@ T, P = map(int, input().split())
 
 tshirts = 0
 for i in sizes:
-    tshirts += i//T
-    if i%T>0:
+    tshirts += i // T
+    if i % T > 0:
         tshirts += 1
 
 print(tshirts)

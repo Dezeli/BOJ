@@ -9,4 +9,3 @@ for _ in range(m):
 
 for i in menu:
     print(i)
-
