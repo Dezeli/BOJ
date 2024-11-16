@@ -10,4 +10,4 @@ for _ in range(N):
     min_x = min(x, min_x)
     min_y = min(y, min_y)
 
-print((max_x-min_x)*(max_y-min_y))
+print((max_x - min_x) * (max_y - min_y))
