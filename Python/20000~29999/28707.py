@@ -19,7 +19,7 @@ heapq.heappush(heap, (0, A))
 find = False
 while heap:
     cost, li = heapq.heappop(heap)
-    if li==need:
+    if li == need:
         find = True
         break
 

@@ -3,8 +3,10 @@ import sys
 
 input = sys.stdin.readline
 
+
 def ccw(x1, y1, x2, y2, x3, y3):
     return (x2 - x1) * (y3 - y1) - (y2 - y1) * (x3 - x1)
+
 
 def isCross(x1, y1, x2, y2, x3, y3, x4, y4):
     ccw123 = ccw(x1, y1, x2, y2, x3, y3)
@@ -24,6 +26,7 @@ def isCross(x1, y1, x2, y2, x3, y3, x4, y4):
         return 1
     return 0
 
+
 N = int(input())
 group = [0 for _ in range(N)]
 lines = []
@@ -33,20 +36,20 @@ lines = []
 for i in range(N):
     num = next_group
     l = list(map(int, input().split()))
-    same = [0 for _ in range(next_group+1)]
+    same = [0 for _ in range(next_group + 1)]
     for j in range(i):
-        if isCross(*(l+lines[j])):
+        if isCross(*(l + lines[j])):
             num = min(num, group[j])
             same[group[j]] = 1
 
     for j in range(i):
-        if same[group[j]]==1:
+        if same[group[j]] == 1:
             group[j] = num
 
     group[i] = num
     lines.append(l)
-    
-    if num==next_group:
+
+    if num == next_group:
         next_group += 1
 
 set_group = set(group)

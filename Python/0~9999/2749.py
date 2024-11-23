@@ -1,4 +1,4 @@
-# 피보나치 수
+# 피보나치 수 3
 import sys
 
 input = sys.stdin.readline

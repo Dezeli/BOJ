@@ -11,9 +11,9 @@ for _ in range(T):
         yon += a
         kor += b
 
-    if yon>kor:
+    if yon > kor:
         print("Yonsei")
-    elif yon<kor:
+    elif yon < kor:
         print("Korea")
     else:
         print("Draw")

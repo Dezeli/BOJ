@@ -7,7 +7,7 @@ for _ in range(T):
     g_sum = 0
     N = int(input())
     for _ in range(N):
-        C,G = map(float, input().split(" "))
+        C, G = map(float, input().split(" "))
         c_sum += C
-        g_sum += C*G
-    print(int(c_sum), round(g_sum/c_sum, 1))
+        g_sum += C * G
+    print(int(c_sum), round(g_sum / c_sum, 1))
