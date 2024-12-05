@@ -6,10 +6,10 @@ mirror = [input() for _ in range(N)]
 
 K = int(input())
 
-if K==1:
+if K == 1:
     for l in mirror:
         print(l)
-elif K==2:
+elif K == 2:
     for l in mirror:
         print(l[::-1])
 else:

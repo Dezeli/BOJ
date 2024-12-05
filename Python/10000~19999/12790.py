@@ -8,4 +8,4 @@ for _ in range(T):
     MP = max(MP1 + MP2, 1)
     A = max(A1 + A2, 0)
     D = D1 + D2
-    print(HP+5*MP+2*A+2*D)
+    print(HP + 5 * MP + 2 * A + 2 * D)

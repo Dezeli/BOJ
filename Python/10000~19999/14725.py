@@ -11,9 +11,8 @@ datas.sort()
 last_data = [0]
 for d in datas:
     for i in range(len(d)):
-        if last_data[i]!=d[i]:
+        if last_data[i] != d[i]:
             break
     for j in range(i, len(d)):
-        print("--"*j+d[j])
+        print("--" * j + d[j])
     last_data = d
-

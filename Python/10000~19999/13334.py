@@ -13,7 +13,7 @@ lines = [list(map(int, input().split())) for _ in range(n)]
 d = int(input())
 
 for h, o in lines:
-    if abs(h-o) > d:
+    if abs(h - o) > d:
         continue
     heapq.heappush(sQ, min(h, o))
     heapq.heappush(bQ, max(h, o))
@@ -26,7 +26,7 @@ while bQ:
     cur_p += 1
     while sQ:
         s = heapq.heappop(sQ)
-        if s >= b-d:
+        if s >= b - d:
             heapq.heappush(sQ, s)
             break
         cur_p -= 1

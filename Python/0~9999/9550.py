@@ -8,5 +8,5 @@ for _ in range(T):
     kids = 0
     candy = list(map(int, input().split()))
     for c in candy:
-        kids += c//K
+        kids += c // K
     print(kids)
