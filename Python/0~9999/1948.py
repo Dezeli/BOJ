@@ -8,10 +8,12 @@ n = int(input())
 m = int(input())
 
 roads = defaultdict(list)
+reverse_road = defaultdict(list)
 
 for _ in range(m):
     a, b, t = map(int, input().split())
     roads[a].append([b, t])
+    reverse_road[b].append([a, t])
 
 s, e = map(int, input().split())
 
@@ -27,5 +29,11 @@ while move:
 
     for b1, t1 in roads[b]:
         move.append([b1, t+t1])
+
+visit = defaultdict(int)
+
+max_time = []
+
+
 
 print(max_t[e])
