@@ -32,8 +32,19 @@ while move:
 
 visit = defaultdict(int)
 
-max_time = []
+road_cnt = 0
+move = [[e, max_t[e]]]
+while move:
+    a, t = move.pop()
 
-
+    for a1, t1 in reverse_road[a]:
+        if visit[(a, a1)]==1:
+            continue
+        if max_t[a1] != t-t1:
+            continue
+        road_cnt += 1
+        visit[(a, a1)] = 1
+        move.append([a1, t-t1])
 
 print(max_t[e])
+print(road_cnt)
