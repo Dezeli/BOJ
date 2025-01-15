@@ -7,25 +7,31 @@ input = sys.stdin.readline
 T = int(input())
 
 
-def find(P, a):
-    if P[a]==a:
-        return a
-    else:
-        return find(P, P[a])
+def find(a):
+    if P[a] != a:
+        P[a] = find(P[a])
+    return P[a]
 
-def union(P, a, b):
-    A = find(P, a)
-    B = find(P, b)
+def union(a, b):
+    A = find(a)
+    B = find(b)
 
-    if A!=B:
-        P[a] = min(A, B)
-        P[b] = min(A, B)
+    if A != B:
+        P[B] = A
+        C[A] += C[B]
+
+    print(C[A])
+
+class key_dict(dict):
+    def __missing__(self, key):
+        self[key] = key
+        return self[key]
 
 for _ in range(T):
-    parent = defaultdict(lambda x: x)
-    child = defaultdict(int)
+    P = key_dict()
+    C = defaultdict(lambda:1)
     F = int(input())
-    P = min(input().rstrip().split())
-    cnt = 2
-    for i in range(F-1):
+
+    for i in range(F):
         a, b = input().rstrip().split()
+        union(a, b)
