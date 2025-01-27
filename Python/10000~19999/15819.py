@@ -7,4 +7,4 @@ N, I = map(int, input().split())
 
 names = [input() for _ in range(N)]
 names.sort()
-print(names[I-1])
+print(names[I - 1])

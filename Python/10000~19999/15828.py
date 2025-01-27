@@ -9,12 +9,12 @@ router = deque()
 
 while True:
     d = int(input())
-    if d==-1:
+    if d == -1:
         break
-    if d==0:
+    if d == 0:
         router.popleft()
     else:
-        if len(router)>=N:
+        if len(router) >= N:
             continue
         else:
             router.append(d)

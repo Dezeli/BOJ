@@ -7,7 +7,7 @@ N = int(input())
 M = int(input())
 
 villian = []
-if M==0:
+if M == 0:
     print(N)
 else:
     for _ in range(M):
@@ -15,9 +15,11 @@ else:
         villian.append([x, y])
     villian.sort(reverse=True)
 
-
     broke = []
-    x1, y1, = villian.pop()
+    (
+        x1,
+        y1,
+    ) = villian.pop()
     while villian:
         x2, y2 = villian.pop()
         if x2 <= y1:
@@ -29,5 +31,5 @@ else:
 
     room = N
     for x, y in broke:
-        room -= (y-x)
+        room -= y - x
     print(room)

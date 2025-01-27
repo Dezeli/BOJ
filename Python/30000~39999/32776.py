@@ -4,10 +4,10 @@ S = int(input())
 Ma, F, Mb = map(int, input().split())
 
 
-if S<=240:
-    print('high speed rail')
+if S <= 240:
+    print("high speed rail")
 else:
-    if Ma+F+Mb<S:
-        print('flight')
+    if Ma + F + Mb < S:
+        print("flight")
     else:
-        print('high speed rail')
+        print("high speed rail")

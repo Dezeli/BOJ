@@ -13,4 +13,4 @@ for _ in range(M):
     x, y = map(int, input().split())
     for i in range(x, y):
         wall[i] = 0
-print(sum(wall)+1)
+print(sum(wall) + 1)

@@ -10,29 +10,29 @@ day = 1440
 
 cur = Ae
 suc = True
-for i in range(1, N+1):
+for i in range(1, N + 1):
     cur += K
-    if cur<Bs:
+    if cur < Bs:
         print("NO")
         suc = False
         break
-    elif cur>Be:
+    elif cur > Be:
         cur = Be
     cur += K
-    if cur<Cs:
+    if cur < Cs:
         print("NO")
         suc = False
         break
-    elif cur>Ce:
+    elif cur > Ce:
         cur = Ce
-    cur += K-day
-    if cur<As:
-        if i==N:
+    cur += K - day
+    if cur < As:
+        if i == N:
             continue
         print("NO")
         suc = False
         break
-    elif cur>Ae:
+    elif cur > Ae:
         cur = Ae
 if suc:
     print("YES")

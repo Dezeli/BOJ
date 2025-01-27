@@ -11,13 +11,13 @@ for _ in range(T):
     l = deque([])
     r = deque([])
     for i in S:
-        if l and i == '-':
+        if l and i == "-":
             l.pop()
-        elif l and i == '<':
+        elif l and i == "<":
             r.appendleft(l.pop())
-        elif r and i == '>':
+        elif r and i == ">":
             l.append(r.popleft())
-        elif i != '<' and i != '>' and i != '-':
+        elif i != "<" and i != ">" and i != "-":
             l.append(i)
 
-    print(''.join(l + r))
+    print("".join(l + r))

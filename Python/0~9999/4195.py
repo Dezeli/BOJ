@@ -12,6 +12,7 @@ def find(a):
         P[a] = find(P[a])
     return P[a]
 
+
 def union(a, b):
     A = find(a)
     B = find(b)
@@ -22,14 +23,16 @@ def union(a, b):
 
     print(C[A])
 
+
 class key_dict(dict):
     def __missing__(self, key):
         self[key] = key
         return self[key]
 
+
 for _ in range(T):
     P = key_dict()
-    C = defaultdict(lambda:1)
+    C = defaultdict(lambda: 1)
     F = int(input())
 
     for i in range(F):

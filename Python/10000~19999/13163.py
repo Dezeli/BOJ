@@ -4,4 +4,4 @@ N = int(input())
 
 for _ in range(N):
     name = list(input().split())
-    print('god'+''.join(name[1:]))
+    print("god" + "".join(name[1:]))

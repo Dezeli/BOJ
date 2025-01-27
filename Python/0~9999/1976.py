@@ -3,10 +3,12 @@ import sys
 
 input = sys.stdin.readline
 
+
 def find(P, x):
     if P[x] != x:
         P[x] = find(P, P[x])
     return P[x]
+
 
 def union(P, a, b):
     A = find(P, a)
@@ -14,15 +16,16 @@ def union(P, a, b):
     if A != B:
         P[B] = A
 
+
 N = int(input())
 M = int(input())
 
-P = [i for i in range(N+1)]
+P = [i for i in range(N + 1)]
 
-for i in range(1, N+1):
+for i in range(1, N + 1):
     roads = list(map(int, input().split()))
-    for j in range(1, N+1):
-        if roads[j-1] == 1:
+    for j in range(1, N + 1):
+        if roads[j - 1] == 1:
             union(P, i, j)
 
 trip = list(map(int, input().split()))

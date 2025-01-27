@@ -11,6 +11,6 @@ for _ in range(n):
         flag = False
 
 if flag:
-    print('Yes')
+    print("Yes")
 else:
-    print('No')
+    print("No")

@@ -2,4 +2,4 @@
 
 N = int(input())
 
-print(N-2024)
+print(N - 2024)

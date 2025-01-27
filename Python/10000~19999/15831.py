@@ -10,28 +10,28 @@ max_len = 0
 
 black = 0
 white = 0
-if road[0]=='W':
+if road[0] == "W":
     white += 1
 else:
     black += 1
-if black<=B and white>=W:
+if black <= B and white >= W:
     max_len = 1
 
-while r+1<N:
-    if black<=B:
+while r + 1 < N:
+    if black <= B:
         r += 1
-        if road[r]=='W':
+        if road[r] == "W":
             white += 1
         else:
             black += 1
     else:
-        if road[l]=='W':
+        if road[l] == "W":
             white -= 1
         else:
             black -= 1
         l += 1
-    
-    if black<=B and white>=W:
-        max_len = max(r-l+1, max_len)
+
+    if black <= B and white >= W:
+        max_len = max(r - l + 1, max_len)
 
 print(max_len)

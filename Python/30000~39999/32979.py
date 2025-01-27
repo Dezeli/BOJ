@@ -3,7 +3,7 @@ import sys
 
 input = sys.stdin.readline
 
-N = int(input())*2
+N = int(input()) * 2
 
 T = int(input())
 
@@ -14,8 +14,8 @@ ans = []
 
 cur = -1
 for i in shout:
-    cur += i%N
-    if cur>=N:
+    cur += i % N
+    if cur >= N:
         cur -= N
     ans.append(apt[cur])
     cur -= 1

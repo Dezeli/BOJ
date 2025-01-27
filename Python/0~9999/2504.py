@@ -9,7 +9,7 @@ correct = True
 stack = []
 
 for i in S:
-    if i=='(' or i=='[':
+    if i == "(" or i == "[":
         stack.append(i)
     else:
         cnt = 0
@@ -19,7 +19,7 @@ for i in S:
             correct = False
             break
         while True:
-            if type(last)==int:
+            if type(last) == int:
                 cnt += last
                 if stack:
                     last = stack.pop()
@@ -28,20 +28,20 @@ for i in S:
                     break
             else:
                 cnt = max(1, cnt)
-                if last=='(' and i==')':
-                    stack.append(cnt*2)
-                elif last=='[' and i==']':
-                    stack.append(cnt*3)
+                if last == "(" and i == ")":
+                    stack.append(cnt * 2)
+                elif last == "[" and i == "]":
+                    stack.append(cnt * 3)
                 else:
                     correct = False
                 break
-    
+
     if not correct:
         break
 
 
 for i in stack:
-    if type(i)==str:
+    if type(i) == str:
         correct = False
         break
 

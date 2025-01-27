@@ -14,7 +14,7 @@ min_oil = oils[0]
 cost = 0
 
 for i in roads:
-    cost += min_oil*i
+    cost += min_oil * i
     min_oil = min(min_oil, oils[o])
     o += 1
 

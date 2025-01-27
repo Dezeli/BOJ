@@ -7,7 +7,7 @@ N = int(input())
 
 p = []
 
-for i in range(1, N+1):
+for i in range(1, N + 1):
     S, C, L = map(int, input().split())
     p.append([-S, C, L, i])
 

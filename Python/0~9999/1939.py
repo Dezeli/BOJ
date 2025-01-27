@@ -15,14 +15,14 @@ for _ in range(M):
 
 start, end = map(int, input().split())
 
-root = [[-10**9, start]]
-max_w = [0 for i in range(N+1)]
+root = [[-(10**9), start]]
+max_w = [0 for i in range(N + 1)]
 while root:
     w, n = heapq.heappop(root)
     if max_w[n] >= -w:
         continue
     max_w[n] = -w
-    if n==end:
+    if n == end:
         continue
 
     for w1, n1 in bridge[n]:
