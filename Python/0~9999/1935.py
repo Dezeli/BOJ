@@ -11,25 +11,25 @@ for i in range(N):
     nums.append(int(input()))
 stack = []
 for i in S:
-    if i == '+':
+    if i == "+":
         a = stack.pop()
         b = stack.pop()
-        stack.append(a+b)
-    elif i == '-':
+        stack.append(a + b)
+    elif i == "-":
         a = stack.pop()
         b = stack.pop()
-        stack.append(b-a)
-    elif i == '/':
+        stack.append(b - a)
+    elif i == "/":
         a = stack.pop()
         b = stack.pop()
-        stack.append(b/a)
-    elif i == '*':
+        stack.append(b / a)
+    elif i == "*":
         a = stack.pop()
         b = stack.pop()
-        stack.append(a*b)
+        stack.append(a * b)
     else:
         if i.isupper():
-            stack.append(nums[ord(i)-ord('A')])
+            stack.append(nums[ord(i) - ord("A")])
 
 for j in stack:
     print("{:.2f}".format(j))

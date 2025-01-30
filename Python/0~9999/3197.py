@@ -34,7 +34,7 @@ def change_melt(water, lake):
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
-            if (0 <= nx < R and 0 <= ny < C and lake[nx][ny] == "X"): 
+            if 0 <= nx < R and 0 <= ny < C and lake[nx][ny] == "X":
                 lake[nx][ny] = "."
                 new_water.append((nx, ny))
     return new_water

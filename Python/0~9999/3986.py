@@ -11,7 +11,7 @@ for _ in range(N):
     s = input().rstrip()
     for i in s:
         if stack:
-            if stack[-1]==i:
+            if stack[-1] == i:
                 stack.pop()
                 continue
         stack.append(i)

@@ -8,12 +8,12 @@ while True:
     i += 1
     L, P, V = map(int, input().split())
 
-    if L==P==V==0:
+    if L == P == V == 0:
         break
 
     use = 0
 
-    while V-P>=0:
+    while V - P >= 0:
         use += L
         V -= P
     use += min(V, L)

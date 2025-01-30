@@ -6,7 +6,7 @@ input = sys.stdin.readline
 while True:
     hist = list(map(int, input().split()))
     n = hist[0]
-    if n==0:
+    if n == 0:
         break
     hist = hist[1:]
 
@@ -14,13 +14,13 @@ while True:
     ans = 0
     for i in range(n):
         idx = i
-        while (stack and stack[-1][1] > hist[i]):
+        while stack and stack[-1][1] > hist[i]:
             idx, height = stack.pop()
             rst = (i - idx) * height
             ans = max(ans, rst)
 
         stack.append([idx, hist[i]])
-        
+
     while stack:
         idx, height = stack.pop()
         rst = (n - idx) * height
