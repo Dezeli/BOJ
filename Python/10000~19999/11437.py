@@ -1,4 +1,4 @@
-# LCA 2
+# LCA
 import sys
 
 input = sys.stdin.readline
