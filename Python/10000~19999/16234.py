@@ -18,32 +18,33 @@ def move(x, y):
     if visit[x][y]:
         return
 
-    visit[x][y] = 1    
+    visit[x][y] = 1
     p += people[x][y]
     c.append([x, y])
-    
+
     dx = [1, 0, -1, 0]
     dy = [0, 1, 0, -1]
     for i in range(4):
-        x1 = x+dx[i]
-        y1 = y+dy[i]
-        if x1<0 or y1<0 or x1>=N or y1>=N:
+        x1 = x + dx[i]
+        y1 = y + dy[i]
+        if x1 < 0 or y1 < 0 or x1 >= N or y1 >= N:
             continue
-        if L <= abs(people[x1][y1]-people[x][y]) <= R:
+        if L <= abs(people[x1][y1] - people[x][y]) <= R:
             finish = False
             move(x1, y1)
-    
+
+
 ans = 0
 while True:
     finish = True
-    visit = [[0]*N for _ in range(N)]
+    visit = [[0] * N for _ in range(N)]
     for i in range(N):
         for j in range(N):
             p = 0
             c = []
             move(i, j)
             for x, y in c:
-                people[x][y] = p//(len(c))
+                people[x][y] = p // (len(c))
 
     if finish:
         break

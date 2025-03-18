@@ -18,7 +18,7 @@ ramen_heap = []
 
 for d, r in quiz:
     heapq.heappush(ramen_heap, r)
-    
+
     if len(ramen_heap) > d:
         heapq.heappop(ramen_heap)
 

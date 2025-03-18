@@ -12,15 +12,15 @@ for _ in range(N):
 
 ans = 0
 
-dic={}
+dic = {}
 
 for w in words:
     cnt = len(w)
     for word in w:
         if word not in dic:
-            dic[word] = (10**(cnt-1))
+            dic[word] = 10 ** (cnt - 1)
         else:
-            dic[word] += (10**(cnt-1))
+            dic[word] += 10 ** (cnt - 1)
         cnt -= 1
 
 
@@ -30,6 +30,6 @@ values_lst.reverse()
 num = 9
 
 for i in values_lst:
-    ans += i*num
-    num -= 1    
+    ans += i * num
+    num -= 1
 print(ans)

@@ -13,12 +13,12 @@ for i in range(N):
     cnt = 0
     idx = 0
     while cnt != p:
-        if line[idx]==0:
+        if line[idx] == 0:
             cnt += 1
         idx += 1
-    while line[idx]!=0:
+    while line[idx] != 0:
         idx += 1
 
-    line[idx] = i+1
+    line[idx] = i + 1
 
 print(*line)

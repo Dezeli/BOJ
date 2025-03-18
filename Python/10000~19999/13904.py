@@ -16,7 +16,7 @@ for _ in range(N):
 score = 0
 new = []
 while heap:
-    if max_day==0:
+    if max_day == 0:
         break
     w, d = heapq.heappop(heap)
     if d < max_day:
@@ -33,6 +33,6 @@ while heap:
         while new:
             w1, d1 = new.pop()
             heapq.heappush(heap, [w1, d1])
-    
+
 
 print(score)

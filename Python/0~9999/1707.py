@@ -7,19 +7,19 @@ sys.setrecursionlimit(10**6)
 
 K = int(input())
 
+
 def search(n, c):
     global bipartite
     if visit[n]:
-        if c!=color[n]:
+        if c != color[n]:
             bipartite = False
         return
-    
+
     visit[n] = True
     color[n] = c
 
     for i in graph[n]:
         search(i, not c)
-
 
 
 for _ in range(K):
@@ -32,12 +32,12 @@ for _ in range(K):
         graph[b].append(a)
 
     bipartite = True
-    color = [True for _ in range(V+1)]
-    visit = [False for _ in range(V+1)]
+    color = [True for _ in range(V + 1)]
+    visit = [False for _ in range(V + 1)]
     for i in range(V):
         if not visit[i]:
             search(i, True)
-            
+
     if bipartite:
         print("YES")
     else:

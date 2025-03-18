@@ -11,6 +11,6 @@ line.sort(reverse=True)
 tip = 0
 
 for i in range(N):
-    tip += max(line[i]-i, 0)
+    tip += max(line[i] - i, 0)
 
 print(tip)

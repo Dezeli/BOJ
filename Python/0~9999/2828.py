@@ -11,15 +11,15 @@ r = M
 cnt = 0
 for _ in range(J):
     i = int(input())
-    if l<=i<=r:
+    if l <= i <= r:
         continue
-    if i<l:
-        cnt += l-i
+    if i < l:
+        cnt += l - i
         l = i
-        r = l+M-1
+        r = l + M - 1
     else:
-        cnt += i-r
+        cnt += i - r
         r = i
-        l = r-M+1
+        l = r - M + 1
 
 print(cnt)

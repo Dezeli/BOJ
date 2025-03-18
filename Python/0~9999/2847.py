@@ -12,10 +12,10 @@ last = nums[0]
 
 cnt = 0
 for i in nums[1:]:
-    if last<=i:
-        cnt += 1 + i-last
+    if last <= i:
+        cnt += 1 + i - last
         last -= 1
     else:
         last = i
-    
+
 print(cnt)

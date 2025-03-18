@@ -12,8 +12,8 @@ sensors.sort()
 dis = []
 last = sensors[0]
 for i in sensors[1:]:
-    dis.append(i-last)
+    dis.append(i - last)
     last = i
 
 dis.sort()
-print(sum(dis[:N-K]))
+print(sum(dis[: N - K]))

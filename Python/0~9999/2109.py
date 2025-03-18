@@ -15,12 +15,12 @@ lec.sort(reverse=True, key=lambda x: x[0])
 
 days = set(range(1, 10001))
 
-money = 0 
+money = 0
 for p, d in lec:
     for day in range(d, 0, -1):
         if day in days:
             days.remove(day)
-            money += p 
+            money += p
             break
 
-print(money) 
+print(money)

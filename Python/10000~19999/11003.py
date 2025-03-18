@@ -11,7 +11,6 @@ dq = deque([])
 ans = []
 
 
-
 for i in range(L):
     if dq:
         while A[i] < dq[-1]:
@@ -30,7 +29,7 @@ for i in range(L, N):
                 break
     dq.append(A[i])
 
-    if A[i-L]==dq[0]:
+    if A[i - L] == dq[0]:
         dq.popleft()
 
     ans.append(dq[0])

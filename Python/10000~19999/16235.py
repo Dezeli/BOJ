@@ -41,7 +41,7 @@ for _ in range(K):
                     dead += value // 2
             ground[i][j] += dead
             trees[i][j] = cur_trees
-    
+
     while fall:
         x, y = fall.pop()
         for k in range(8):

@@ -13,7 +13,7 @@ boxes = list(map(int, input().split()))
 boxes.sort(reverse=True)
 boxes = deque(boxes)
 
-if cranes[0]<boxes[0]:
+if cranes[0] < boxes[0]:
     print(-1)
 else:
     cnt = 0
@@ -21,9 +21,9 @@ else:
         cnt += 1
         next_boxes = deque([])
         i = 0
-        while boxes and i<N:
+        while boxes and i < N:
             b = boxes.popleft()
-            if cranes[i]>=b:
+            if cranes[i] >= b:
                 i += 1
             else:
                 next_boxes.append(b)

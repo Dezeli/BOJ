@@ -8,6 +8,6 @@ h = list(map(int, input().split()))
 h.sort()
 
 for i in h:
-    if L>=i:
+    if L >= i:
         L += 1
 print(L)

@@ -17,6 +17,7 @@ for _ in range(N - 1):
     graph[a].append(b)
     graph[b].append(a)
 
+
 def dfs(x, depth):
     visit[x] = True
     d[x] = depth
@@ -27,6 +28,7 @@ def dfs(x, depth):
 
         parent[n][0] = x
         dfs(n, depth + 1)
+
 
 def set_parent():
     dfs(1, 0)
@@ -39,7 +41,7 @@ def lca(a, b):
     if d[a] > d[b]:
         a, b = b, a
 
-    for i in range(max_len-1, -1, -1):
+    for i in range(max_len - 1, -1, -1):
         if d[b] - d[a] >= 2**i:
             b = parent[b][i]
 

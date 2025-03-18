@@ -9,7 +9,7 @@ cnt = 0
 hi = set()
 for _ in range(N):
     name = input().rstrip()
-    if name=="ENTER":
+    if name == "ENTER":
         cnt += len(hi)
         hi = set()
         continue

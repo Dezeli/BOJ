@@ -14,14 +14,14 @@ else:
     cnt = -abs(l[-1])
 
 for i in range(0, N, M):
-    if l[i]<0:
-        cnt += abs(l[i])*2
+    if l[i] < 0:
+        cnt += abs(l[i]) * 2
     else:
         break
 
-for i in range(N-1, -1, -M):
-    if l[i]>0:
-        cnt += l[i]*2
+for i in range(N - 1, -1, -M):
+    if l[i] > 0:
+        cnt += l[i] * 2
     else:
         break
 

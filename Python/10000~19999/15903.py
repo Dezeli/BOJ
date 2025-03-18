@@ -13,7 +13,7 @@ for i in map(int, input().split()):
 for _ in range(m):
     a = heapq.heappop(cards)
     b = heapq.heappop(cards)
-    heapq.heappush(cards, a+b)
-    heapq.heappush(cards, a+b)
+    heapq.heappush(cards, a + b)
+    heapq.heappush(cards, a + b)
 
 print(sum(cards))

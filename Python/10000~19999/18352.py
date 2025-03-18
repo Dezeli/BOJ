@@ -6,13 +6,13 @@ input = sys.stdin.readline
 
 N, M, K, X = map(int, input().split())
 
-road = [[] for _ in range(N+1)]
+road = [[] for _ in range(N + 1)]
 
 for _ in range(M):
     A, B = map(int, input().split())
     road[A].append(B)
 
-visit = [N+1]*(N+1)
+visit = [N + 1] * (N + 1)
 
 move = deque([[0, X]])
 
@@ -22,11 +22,11 @@ while move:
     if visit[c] <= d:
         continue
     visit[c] = d
-    if d==K:
+    if d == K:
         result.append(c)
-    
+
     for c1 in road[c]:
-        move.append([d+1, c1])
+        move.append([d + 1, c1])
 
 
 if result:
