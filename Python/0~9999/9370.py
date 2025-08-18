@@ -15,32 +15,42 @@ for _ in range(T):
         a, b, d = map(int, input().split())
         roads[a].append([b, d])
         roads[b].append([a, d])
-    
+        if (a==g and b==h) or (a==h and b==g):
+            smell = d
+
     candidates = sorted([int(input()) for _ in range(t)])
-    min_d = [MAX_d for _ in range(n+1)]
-    smell = [False for _ in range(n+1)]
-
+    min_s = [MAX_d for _ in range(n+1)]
+    min_g = [MAX_d for _ in range(n+1)]
+    min_h = [MAX_d for _ in range(n+1)]
     move = deque([])
-    move.append([0, s, False])
+    move.append([0, s])
     while move:
-        d, a, e = move.popleft()
-        if min_d[a] >= d:
-
-            if min_d[a] > d:
-                smell[a] = e
-            else:
-                if e:
-                    smell[a] = e
-            min_d[a] = d
-            
+        d, a = move.popleft()
+        if min_s[a] > d:
+            min_s[a] = d
             for b, d1 in roads[a]:
-                if (g==a and h==b) or (g==b and h==a) or e:
-                    move.append([d+d1, b, True])
-                else:
-                    move.append([d+d1, b, False])
+                move.append([d+d1, b])
+    
+    move.append([0, g])
+    while move:
+        d, a = move.popleft()
+        if min_g[a] > d:
+            min_g[a] = d
+            for b, d1 in roads[a]:
+                move.append([d+d1, b])
+    
+    move.append([0, h])
+    while move:
+        d, a = move.popleft()
+        if min_h[a] > d:
+            min_h[a] = d
+            for b, d1 in roads[a]:
+                move.append([d+d1, b])
 
     ans = []
     for i in candidates:
-        if smell[i]:
+        visit = min(min_s[g] + min_h[i], min_s[h] + min_g[i]) + smell
+        if visit==min_s[i]:
             ans.append(i)
+    
     print(*ans)
