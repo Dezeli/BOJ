@@ -4,38 +4,34 @@ from collections import deque
 
 input = sys.stdin.readline
 
+def bfs(x, y):
+    move = deque()
+    move.append(x)
+    while move: 
+        x = move.popleft()
+        if x==y:
+            break
+        for i in [x-1, x+1, x*2]:
+            if 0<=i<100001 and visited[i] == 0:
+                visited[i] = visited[x] + 1
+                visited_route[i] = x
+                move.append(i)
+
+
 N, K = map(int, input().split())
+visited = [0 for _ in range(100001)]
+visited_route = [0 for _ in range(100001)]
+visited[N] = 1
 
-move = deque([])
-move.append([N, N])
+bfs(N, K)
 
-visit = [0 for _ in range(200001)]
+print(visited[K] - 1)
 
-while move:
-    s, c = move.popleft()
-    if s<0 or s>200000:
-        continue
-    if visit:
-        continue
-    visit[s] = c
-    
-    if s==K:
-        break
-
-    move.append([s+1, s])
-    move.append([s-1, s])
-    move.append([s*2, s])
-
-print(visit[K])
-
-reversed_route = []
-
+route = []
 last = K
-while True:
-    reversed_route.append(visit[last])
-    if visit[last]==last:
-        break
-    last = visit[last]
+while last != N:
+    route.append(last)
+    last = visited_route[last]
+route.append(N)
 
-print(len(reversed_route))
-print(*reversed(reversed_route))
+print(*route[::-1])
