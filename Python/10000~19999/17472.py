@@ -52,7 +52,7 @@ def make_road(i, j):
                 if d2[a][b]!=s:
                     e = d2[a][b]
                     if length>=2:
-                        heapq.heappush([length, s, e])
+                        heapq.heappush(roads, [length, s, e])
                 break
             length += 1
 
@@ -63,8 +63,30 @@ for i in range(N):
         if d2[i][j]!=0:
             make_road(i, j)
 
+def find(x):
+    if connect[x] != x:
+        connect[x] = find(connect[x])
+    return connect[x]
 
-connect = [0 for i in range()]
-for d1 in d2:
-    print(d1)
-print(roads)
+def union(a, b):
+    a, b = find(a), find(b)
+    if a != b:
+        connect[b] = a
+        return True
+    return False
+
+
+connect = [i for i in range(island+1)]
+total = 0
+count = 0
+
+while roads:
+    cost, a, b = heapq.heappop(roads)
+    if union(a, b):
+        total += cost
+        count += 1
+
+if count == island - 1:
+    print(total)
+else:
+    print(-1)
